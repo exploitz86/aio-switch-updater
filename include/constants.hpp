@@ -13,31 +13,31 @@ constexpr const char RCM_PAYLOAD_PATH[] = "romfs:/aio_rcm.bin";
 constexpr const char MARIKO_PAYLOAD_PATH[] = "/payload.bin";
 constexpr const char MARIKO_PAYLOAD_PATH_TEMP[] = "/payload.bin.aio";
 
-constexpr const char CHANGELOG_URL[] = "https://github.com/HamletDuFromage/aio-switch-updater/releases";
+constexpr const char CHANGELOG_URL[] = "https://github.com/exploitz86/aio-switch-updater/releases";
 
-constexpr const char APP_URL[] = "https://github.com/HamletDuFromage/aio-switch-updater/releases/latest/download/aio-switch-updater.zip";
-constexpr const char TAGS_INFO[] = "https://api.github.com/repos/HamletDuFromage/aio-switch-updater/releases/latest";
+constexpr const char APP_URL[] = "https://github.com/exploitz86/aio-switch-updater/releases/latest/download/aio-switch-updater.zip";
+constexpr const char TAGS_INFO[] = "https://api.github.com/repos/exploitz86/aio-switch-updater/releases/latest";
 constexpr const char APP_FILENAME[] = "/config/aio-switch-updater/app.zip";
 
-constexpr const char NXLINKS_URL[] = "https://raw.githubusercontent.com/HamletDuFromage/nx-links/master/nx-links.json";
+constexpr const char NXLINKS_URL[] = "https://raw.githubusercontent.com/exploitz86/nx-links/master/nx-links.json";
 
 constexpr const char CUSTOM_FILENAME[] = "/config/aio-switch-updater/custom.zip";
 constexpr const char HEKATE_IPL_PATH[] = "/bootloader/hekate_ipl.ini";
 
-constexpr const char FIRMWARE_URL[] = "https://raw.githubusercontent.com/HamletDuFromage/nx-links/master/firmwares.json";
+constexpr const char FIRMWARE_URL[] = "https://raw.githubusercontent.com/exploitz86/nx-links/master/firmwares.json";
 constexpr const char FIRMWARE_FILENAME[] = "/config/aio-switch-updater/firmware.zip";
 constexpr const char FIRMWARE_PATH[] = "/firmware/";
 
-constexpr const char CFW_URL[] = "https://raw.githubusercontent.com/HamletDuFromage/nx-links/master/bootloaders.json";
+constexpr const char CFW_URL[] = "https://raw.githubusercontent.com/exploitz86/nx-links/master/bootloaders.json";
 constexpr const char BOOTLOADER_FILENAME[] = "/config/aio-switch-updater/bootloader.zip";
 
-constexpr const char AMS_URL[] = "https://raw.githubusercontent.com/HamletDuFromage/nx-links/master/cfws.json";
-constexpr const char SXOS_URL[] = "https://raw.githubusercontent.com/HamletDuFromage/nx-links/master/sxos.json";
+constexpr const char AMS_URL[] = "https://raw.githubusercontent.com/exploitz86/nx-links/master/cfws.json";
+constexpr const char SXOS_URL[] = "https://raw.githubusercontent.com/exploitz86/nx-links/master/sxos.json";
 constexpr const char AMS_FILENAME[] = "/config/aio-switch-updater/ams.zip";
 
-constexpr const char HEKATE_URL[] = "https://raw.githubusercontent.com/HamletDuFromage/nx-links/master/hekate.json";
+constexpr const char HEKATE_URL[] = "https://raw.githubusercontent.com/exploitz86/nx-links/master/hekate.json";
 
-constexpr const char PAYLOAD_URL[] = "https://raw.githubusercontent.com/HamletDuFromage/nx-links/master/payloads.json";
+constexpr const char PAYLOAD_URL[] = "https://raw.githubusercontent.com/exploitz86/nx-links/master/payloads.json";
 
 constexpr const char DEEPSEA_META_JSON[] = "https://builder.teamneptune.net/meta.json";
 constexpr const char DEEPSEA_BUILD_URL[] = "https://builder.teamneptune.net/build/";
@@ -45,17 +45,17 @@ constexpr const char DEEPSEA_PACKAGE_PATH[] = "/config/deepsea/customPackage.jso
 
 constexpr const char CUSTOM_PACKS_PATH[] = "/config/aio-switch-updater/custom_packs.json";
 
-constexpr const char CHEATS_URL_TITLES[] = "https://github.com/HamletDuFromage/switch-cheats-db/releases/latest/download/titles.zip";
-constexpr const char CHEATS_URL_CONTENTS[] = "https://github.com/HamletDuFromage/switch-cheats-db/releases/latest/download/contents.zip";
-constexpr const char GFX_CHEATS_URL_TITLES[] = "https://github.com/HamletDuFromage/switch-cheats-db/releases/latest/download/titles_60fps-res-gfx.zip";
-constexpr const char GFX_CHEATS_URL_CONTENTS[] = "https://github.com/HamletDuFromage/switch-cheats-db/releases/latest/download/contents_60fps-res-gfx.zip";
-constexpr const char CHEATS_URL_VERSION[] = "https://github.com/HamletDuFromage/switch-cheats-db/releases/latest/download/VERSION";
-constexpr const char LOOKUP_TABLE_URL[] = "https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/master/versions.json";
-constexpr const char LOOKUP_TABLE_CBOR[] = "https://github.com/HamletDuFromage/switch-cheats-db/raw/master/versions.cbor";
-constexpr const char VERSIONS_DIRECTORY[] = "https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/master/versions/";
-constexpr const char CHEATS_DIRECTORY[] = "https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/master/cheats/";
-constexpr const char CHEATS_DIRECTORY_GBATEMP[] = "https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/master/cheats_gbatemp/";
-constexpr const char CHEATS_DIRECTORY_GFX[] = "https://raw.githubusercontent.com/HamletDuFromage/switch-cheats-db/master/cheats_gfx/";
+constexpr const char CHEATS_URL_TITLES[] = "https://github.com/exploitz86/switch-cheats-db/releases/latest/download/titles.zip";
+constexpr const char CHEATS_URL_CONTENTS[] = "https://github.com/exploitz86/switch-cheats-db/releases/latest/download/contents.zip";
+constexpr const char GFX_CHEATS_URL_TITLES[] = "https://github.com/exploitz86/switch-cheats-db/releases/latest/download/titles_60fps-res-gfx.zip";
+constexpr const char GFX_CHEATS_URL_CONTENTS[] = "https://github.com/exploitz86/switch-cheats-db/releases/latest/download/contents_60fps-res-gfx.zip";
+constexpr const char CHEATS_URL_VERSION[] = "https://github.com/exploitz86/switch-cheats-db/releases/latest/download/VERSION";
+constexpr const char LOOKUP_TABLE_URL[] = "https://raw.githubusercontent.com/exploitz86/switch-cheats-db/master/versions.json";
+constexpr const char LOOKUP_TABLE_CBOR[] = "https://github.com/exploitz86/switch-cheats-db/raw/master/versions.cbor";
+constexpr const char VERSIONS_DIRECTORY[] = "https://raw.githubusercontent.com/exploitz86/switch-cheats-db/master/versions/";
+constexpr const char CHEATS_DIRECTORY[] = "https://raw.githubusercontent.com/exploitz86/switch-cheats-db/master/cheats/";
+constexpr const char CHEATS_DIRECTORY_GBATEMP[] = "https://raw.githubusercontent.com/exploitz86/switch-cheats-db/master/cheats_gbatemp/";
+constexpr const char CHEATS_DIRECTORY_GFX[] = "https://raw.githubusercontent.com/exploitz86/switch-cheats-db/master/cheats_gfx/";
 constexpr const char CHEATSLIPS_CHEATS_URL[] = "https://www.cheatslips.com/api/v1/cheats/";
 constexpr const char CHEATSLIPS_TOKEN_URL[] = "https://www.cheatslips.com/api/v1/token";
 constexpr const char TOKEN_PATH[] = "/config/aio-switch-updater/token.json";
@@ -75,9 +75,9 @@ constexpr const char CONTENTS_PATH[] = "contents/";
 constexpr const char TITLES_PATH[] = "titles/";
 
 constexpr const char COLOR_PICKER_URL[] = "https://git.io/jcpicker";
-constexpr const char JC_COLOR_URL[] = "https://raw.githubusercontent.com/HamletDuFromage/aio-switch-updater/master/jc_profiles.json";
+constexpr const char JC_COLOR_URL[] = "https://raw.githubusercontent.com/exploitz86/aio-switch-updater/master/jc_profiles.json";
 constexpr const char JC_COLOR_PATH[] = "/config/aio-switch-updater/jc_profiles.json";
-constexpr const char PC_COLOR_URL[] = "https://raw.githubusercontent.com/HamletDuFromage/aio-switch-updater/master/pc_profiles.json";
+constexpr const char PC_COLOR_URL[] = "https://raw.githubusercontent.com/exploitz86/aio-switch-updater/master/pc_profiles.json";
 constexpr const char PC_COLOR_PATH[] = "/config/aio-switch-updater/pc_profiles.json";
 
 constexpr const char PAYLOAD_PATH[] = "/payloads/";
