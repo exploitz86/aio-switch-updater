@@ -4,7 +4,7 @@
     "copyright": "多工具合一任天堂 Switch 更新器遵循 GPL-3.0 协议",
     "disclaimers_title": "声明",
     "disclaimers": "\u25c6 除了从主 GBAtemp 线程镜像的金手指外，本软件作者不拥有任何金手指。所有的功劳归于各自的所有者。\n\u25c6 链接每 30 分钟刷新一次。如果链接在 30 分钟后仍然有问题，请到 GitHub 提交 issue。",
-    "donate": "\u25c6 喜欢这个程序？考虑捐赠以支持我的努力：'https://git.io/donate_homlet'"
+    "donate": "\u25c6 喜欢这个程序？考虑捐赠以支持原作者：'https://git.io/donate_homlet'"
   },
   "cheats": {
     "installed": "安装金手指",

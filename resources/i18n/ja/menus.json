@@ -2,8 +2,8 @@
   "about": {
     "title": "All-in-One Nintendo Switch Updater",
     "copyright": "AIO-Switch-UpdaterはGPL-3.0の下でライセンスされています",
-    "disclaimers": "\u25c6 メインのGBAtemp.netのスレッドからミラーリングされたチートコードを除いて、HamletDuFromageは何もホストしていません。すべてのクレジットはそれぞれの所有者に送られます。\n\u25c6 リンクは3時間ごとに更新されます。 3時間経過してもリンクが壊れたままの場合は、GitHubの問題を開いてください。\n",
-    "donate": "\u25c6 アプリを気に入ってもらえましたか?作者に貢献をしたいと思った場合は、寄付をお願いします: 'https://git.io/donate_homlet'"
+    "disclaimers": "\u25c6 メインのGBAtemp.netのスレッドからミラーリングされたチートコードを除いて、eXploitzは何もホストしていません。すべてのクレジットはそれぞれの所有者に送られます。\n\u25c6 リンクは3時間ごとに更新されます。 3時間経過してもリンクが壊れたままの場合は、GitHubの問題を開いてください。\n",
+    "donate": "\u25c6 アプリを気に入ってもらえましたか?元の作者に貢献をしたいと思った場合は、寄付をお願いします: 'https://git.io/donate_homlet'"
   },
   "cheats": {
     "installed": "インストールされたチートコード",

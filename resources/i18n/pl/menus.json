@@ -2,8 +2,8 @@
   "about": {
     "title": "All-in-One Nintendo Switch Updater",
     "copyright": "AIO-Switch-Updater jest zgodny z licencją GPL-3.0",
-    "disclaimers": "\u25c6 Oprócz cheatów które są lustrzaną kopią tych z wątku na GBAtemp.net, HamletDuFromage nie hostuje żadnych innych plików. Podziękowania za nie należy kierować do ich twórców.\n\u25c6 Linki są odświeżane co 30 minut. Jeśli po 30 minutach link nadal nie działa, utwórz nowy problem na GitHubie.\n",
-    "donate": "\u25c6 Podoba ci się apka? Rozważ datek na wsparcie moich starań: 'https://git.io/donate_homlet'"
+    "disclaimers": "\u25c6 Oprócz cheatów które są lustrzaną kopią tych z wątku na GBAtemp.net, eXploitz nie hostuje żadnych innych plików. Podziękowania za nie należy kierować do ich twórców.\n\u25c6 Linki są odświeżane co 30 minut. Jeśli po 30 minutach link nadal nie działa, utwórz nowy problem na GitHubie.\n",
+    "donate": "\u25c6 Podoba ci się apka? Rozważ datek na wsparcie oryginalnego autora: 'https://git.io/donate_homlet'"
   },
   "cheats": {
     "installed": "Zainstalowane cheaty",

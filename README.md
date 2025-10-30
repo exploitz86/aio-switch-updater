@@ -1,19 +1,14 @@
 # AIO-Switch-Updater
 ![hbappstore](https://img.shields.io/endpoint?url=https%3A%2F%2Frunkit.io%2Fhomlet%2Fhbappstore-shieldsio%2Fbranches%2Fmaster%3Furl%3Dhttps%3A%2F%2Fswitchbru.com%2Fappstore%2Frepo.json%26name%3Daio-switch-updater)
-![releases](https://img.shields.io/github/downloads/HamletDuFromage/AIO-switch-updater/total)
-[![Build AIO-switch-updater](https://github.com/HamletDuFromage/aio-switch-updater/actions/workflows/main.yml/badge.svg)](https://github.com/HamletDuFromage/aio-switch-updater/actions/workflows/main.yml)
-![tag](https://img.shields.io/github/v/release/HamletDuFromage/AIO-switch-updater)
-![GitHub](https://img.shields.io/github/license/HamletDuFromage/aio-switch-updater)
+![releases](https://img.shields.io/github/downloads/exploitz86/AIO-switch-updater/total)
+[![Build AIO-switch-updater](https://github.com/exploitz86/aio-switch-updater/actions/workflows/main.yml/badge.svg)](https://github.com/exploitz86/aio-switch-updater/actions/workflows/main.yml)
+![tag](https://img.shields.io/github/v/release/exploitz86/AIO-switch-updater)
+![GitHub](https://img.shields.io/github/license/exploitz86/aio-switch-updater)
 
-<a href="https://liberapay.com/HamletDuFromage/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
-[![btc](https://img.shields.io/badge/BTC-1CoFc1bY5AHLP6Noe1zmqnJnp7ZWBxyo79-yellow?logo=bitcoin)](https://github.com/HamletDuFromage/aio-switch-updater#like-the-app)
-[![eth](https://img.shields.io/badge/ETH-0xf68f568e21a15934e0e9a6949288c3ca009140ba-purple?logo=ethereum)](https://github.com/HamletDuFromage/aio-switch-updater#like-the-app)
-[![xmr](https://img.shields.io/badge/XMR-88wjCuhHX3oNhVpEdYeUx3LvrkdTvcTHx7v7L5fQpjCg7QiAReJUVR4LPase5Byj2UhdVdLtvysJaXTFKq2EnuvuLjvQMGL-orange?logo=monero)](https://github.com/HamletDuFromage/aio-switch-updater#like-the-app)
-
-<!-- ([![ko-fi](https://img.shields.io/badge/ko--fi-buy%20me%20a%20coffee-ff69b4)](https://ko-fi.com/hamletdufromage)) -->
+([![ko-fi](https://img.shields.io/badge/ko--fi-buy%20me%20a%20coffee-ff69b4)](https://ko-fi.com/exploitz))
 
 <p align="center">
-<img src = "https://user-images.githubusercontent.com/61667930/93691188-7833f000-fad1-11ea-866d-42e19be54425.jpg"\><br>
+<img src = "icon.jpg"\><br>
 </p>
 
 A Nintendo Switch homebrew app to download and update CFWs, FWs and cheat codes. Supports Atmosphère, ReiNX and SXOS.
@@ -27,13 +22,13 @@ Copy the `aio-switch-updater/` directory to `/switch/` on your sdcard.
 ### ⬦ Update CFW
 - Update the Atmosphère Switch Custom Firmware. AIO-Switch-Updater uses a custom RCM payload to finalise the install as it can't be performed while HOS is running.
   - If you would like to preserve additional files or directories, write their path (one line each) in `/config/aio-switch-updater/preserve.txt` and they won't be overwritten when updating.
-  - Place [this file](https://github.com/HamletDuFromage/aio-switch-updater/blob/master/copy_files.txt) in `/config/aio-switch-updater/copy_files.txt` in order to have specific copy operations performed after each download. This is mainly meant for users with trinkets who want payloads automatically copied to a directory.
+  - Place [this file](https://github.com/exploitz86/aio-switch-updater/blob/master/copy_files.txt) in `/config/aio-switch-updater/copy_files.txt` in order to have specific copy operations performed after each download. This is mainly meant for users with trinkets who want payloads automatically copied to a directory.
 
 ### ⬦ Update Hekate/Payload
 - Download and update Hekate, as well as a selection of RCM payloads
 
 ### ⬦ Custom Downloads
-- A custom Atmosphère url can be entered in [this file](https://github.com/HamletDuFromage/aio-switch-updater/blob/master/custom_packs.json). Once moved to `/config/aio-switch-updater/custom_packs.json`, it will show on the `Custom Download` menu. This can be used to support third-party packs through AIO-Switch-Updater. Packs whose name starts by `[PACK]` won't prompt for a Hekate download.
+- A custom Atmosphère url can be entered in [this file](https://github.com/exploitz86/aio-switch-updater/blob/master/custom_packs.json). Once moved to `/config/aio-switch-updater/custom_packs.json`, it will show on the `Custom Download` menu. This can be used to support third-party packs through AIO-Switch-Updater. Packs whose name starts by `[PACK]` won't prompt for a Hekate download.
 - Non-Atmosphère downloads can also be added in the `misc` category.
 
 ### ⬦ Download firmwares
@@ -52,7 +47,7 @@ Copy the `aio-switch-updater/` directory to `/switch/` on your sdcard.
 - Consult installed cheat codes.
 - Launch the Switch's web browser.
 - Edit internet settings (DNS, IP address, MTU, etc). Add you own configs to `config/aio-switch-updater/internet.json`. You can find a template in the root of the repo.
-- Tabs can be hidden through the `Hide tabs` menu, and more entries can be hidden by manually editing [`config/aio-switch-updater/hide_tabs.json`](https://github.com/HamletDuFromage/aio-switch-updater/blob/master/hide_tabs.json).
+- Tabs can be hidden through the `Hide tabs` menu, and more entries can be hidden by manually editing [`config/aio-switch-updater/hide_tabs.json`](https://github.com/exploitz86/aio-switch-updater/blob/master/hide_tabs.json).
 
 ## Screenshots
 <details><summary>Expand to view the screenshots</summary>
@@ -87,7 +82,7 @@ Use [`switch-ex-curl`](https://github.com/eXhumer/switch-ex-curl) instead of `sw
 
 Clone the repository
 ```bash
-$ git clone --recursive https://github.com/HamletDuFromage/aio-switch-updater
+$ git clone --recursive https://github.com/exploitz86/aio-switch-updater
 $ cd aio-switch-updater
 ```
 
@@ -109,6 +104,8 @@ PRs and suggestions are encouraged! If you wish to help with the localization of
 I do not own, host nor distribute any of the files that can be downloaded with this homebrew tool. At the owner's request, I will immediately remove the ability to download any problematic file.
 
 ## Special thanks
+- [HamletDuFromage](https://github.com/HamletDuFromage) for the original code of this app.
+
 - [natinusala](https://github.com/natinusala) for the Borealis library.
 - [tiansongyu](https://github.com/tiansongyu) for bringing support for multi-language and for his Chinese translation.
 - [yyoossk](https://github.com/yyoossk) for the Japanese locale.
@@ -121,7 +118,7 @@ I do not own, host nor distribute any of the files that can be downloaded with t
 - [fennectech](https://github.com/fennectech) for helping test the app and providing suggestions.
 - Iliak for [Cheat Slips](https://www.cheatslips.com/).
 
-### Like the app?
+### Like the app? Please donate HamletDuFromage!
 - Liberapay : <a href="https://liberapay.com/HamletDuFromage/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 - BTC: 1CoFc1bY5AHLP6Noe1zmqnJnp7ZWBxyo79
 - ETH: 0xf68f568e21a15934e0e9a6949288c3ca009140ba
