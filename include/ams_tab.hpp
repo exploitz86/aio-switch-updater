@@ -28,9 +28,6 @@ class AmsTab_Regular : public AmsTab
 private:
     void CreateLists();
     bool CreateDownloadItems(const nlohmann::ordered_json& cfw_links, bool hekate = true, bool ams = true);
-    void ShowCustomDeepseaBuilder(nlohmann::ordered_json& modules);
-    std::set<std::string> GetLastDownloadedModules(const std::string& json_path);
-    nlohmann::ordered_json SortDeepseaModules(const nlohmann::ordered_json& modules);
     std::string GetRepoName(const std::string& repo);
 
 public:

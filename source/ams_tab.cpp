@@ -109,117 +109,14 @@ void AmsTab_Regular::CreateLists()
 
     this->addView(new brls::Label(
         brls::LabelStyle::DESCRIPTION,
-        "menus/ams_update/deepsea_label"_i18n,
+        "menus/ams_update/ascent_label"_i18n,
         true));
-    listItem = new brls::ListItem("menus/ams_update/get_custom_deepsea"_i18n);
-    listItem->setHeight(LISTITEM_HEIGHT);
-    listItem->getClickEvent()->subscribe([this](brls::View* view) {
-        nlohmann::ordered_json modules;
-        download::getRequest(DEEPSEA_META_JSON, modules);
-        this->ShowCustomDeepseaBuilder(modules);
-    });
-    this->addView(listItem);
     CreateDownloadItems(util::getValueFromKey(cfws, "DeepSea"), false);
 }
 
 std::string AmsTab_Regular::GetRepoName(const std::string& repo)
 {
     return repo.substr(repo.find("/") + 1, repo.length());
-}
-
-std::set<std::string> AmsTab_Regular::GetLastDownloadedModules(const std::string& json_path)
-{
-    nlohmann::ordered_json package = fs::parseJsonFile(json_path);
-    std::set<std::string> res;
-    if (package.find("modules") != package.end()) {
-        for (const auto& module : package.at("modules")) {
-            res.insert(module.get<std::string>());
-        }
-    }
-    return res;
-}
-
-nlohmann::ordered_json AmsTab_Regular::SortDeepseaModules(const nlohmann::ordered_json& modules)
-{
-    nlohmann::ordered_json sorted_modules = nlohmann::ordered_json::object();
-    if (modules.find("modules") != modules.end()) {
-        for (const auto& module : modules.at("modules").items()) {
-            sorted_modules[std::string(module.value().at("category"))][module.key()] = module.value();
-        }
-    }
-    return sorted_modules;
-}
-
-void AmsTab_Regular::ShowCustomDeepseaBuilder(nlohmann::ordered_json& modules)
-{
-    modules = SortDeepseaModules(modules);
-    std::map<std::string, std::string> name_map;
-
-    brls::TabFrame* appView = new brls::TabFrame();
-    appView->setIcon("romfs:/deepsea_icon.png");
-
-    std::vector<brls::List*> lists;
-    std::set<std::string> old_modules = GetLastDownloadedModules(DEEPSEA_PACKAGE_PATH);
-
-    brls::ToggleListItem* deepseaListItem;
-    for (const auto& category : modules.items()) {
-        brls::List* list = new brls::List();
-
-        for (const auto& module : category.value().items()) {
-            auto module_value = module.value();
-            std::string requirements = "";
-            if (!module_value.at("requires").empty()) {
-                requirements = "menus/ams_update/depends_on"_i18n;
-                for (const auto& r : module.value().at("requires")) {
-                    requirements += " " + r.get<std::string>() + ",";
-                }
-                requirements.pop_back();
-            }
-            if (module_value.at("required")) {
-                deepseaListItem = new UnTogglableListItem(module_value.at("displayName"), 1, requirements, "Required", "o");
-            }
-            else {
-                deepseaListItem = new ::brls::ToggleListItem(module_value.at("displayName"),
-                                                             old_modules.find(module.key()) != old_modules.end() ? 1 : 0,
-                                                             requirements,
-                                                             "menus/common/selected"_i18n,
-                                                             "menus/common/off"_i18n);
-            }
-            name_map.insert(std::pair(module_value.at("displayName"), module.key()));
-            deepseaListItem->registerAction("menus/ams_update/show_module_description"_i18n, brls::Key::Y, [module_value] {
-                util::showDialogBoxInfo(fmt::format("{}:\n{}", module_value.at("repo"), module_value.at("description")));
-                return true;
-            });
-            list->addView(deepseaListItem);
-        }
-        lists.push_back(list);
-        appView->addTab(category.key(), list);
-    }
-
-    appView->registerAction("menus/ams_update/download_deepsea_package"_i18n, brls::Key::X, [this, lists, name_map] {
-        std::set<std::string> desired_modules;
-        for (const auto& list : lists) {
-            for (size_t i = 0; i < list->getViewsCount(); i++) {
-                if (brls::ToggleListItem* item = dynamic_cast<brls::ToggleListItem*>(list->getChild(i))) {
-                    if (item->getToggleState()) {
-                        desired_modules.insert(name_map.at(item->getLabel()));
-                    }
-                }
-            }
-        }
-
-        std::string request_url = DEEPSEA_BUILD_URL;
-        for (const auto& e : desired_modules)
-            request_url += e + ";";
-
-        this->CreateStagedFrames("menus/common/download"_i18n + "Custom DeepSea package" + "menus/common/from"_i18n + request_url,
-                                 request_url,
-                                 this->erista);
-        return true;
-    });
-    appView->registerAction("", brls::Key::PLUS, [this] { return true; });
-
-    brls::PopupFrame::open("menus/ams_update/deepsea_builder"_i18n, appView, modules.empty() ? "menus/ams_update/cant_fetch_deepsea"_i18n : "menus/ams_update/build_your_deepsea"_i18n, "");
 }
 
 AmsTab_Custom::AmsTab_Custom(const nlohmann::ordered_json& nxlinks, const bool erista) : AmsTab(nxlinks, erista)
