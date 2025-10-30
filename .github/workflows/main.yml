@@ -3,7 +3,8 @@ name: Build AIO-switch-updater
 on: 
   push:
     tags:
-      - 'v*'  # Triggers on version tags like v2.24.0
+      - 'v*'     # Triggers on version tags like v2.24.0
+      - '[0-9]*' # Triggers on version tags like 1.00.0
   workflow_dispatch:  # Manual trigger
 
 jobs:
@@ -46,10 +47,21 @@ jobs:
     - name: Extract version from tag or Makefile
       id: version
       run: |
-        if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" =~ refs/tags/v.* ]]; then
-          VERSION=${GITHUB_REF#refs/tags/v}
+        if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" =~ refs/tags/.* ]]; then
+          # Handle both v1.00.0 and 1.00.0 tag formats
+          if [[ "${{ github.ref }}" =~ refs/tags/v.* ]]; then
+            VERSION=${GITHUB_REF#refs/tags/v}
+          else
+            VERSION=${GITHUB_REF#refs/tags/}
+          fi
         else
-          VERSION=$(grep "APP_VERSION :=" Makefile | cut -d' ' -f4)
+          # Extract from Makefile, handle potential whitespace/tabs
+          VERSION=$(grep "APP_VERSION" Makefile | sed 's/.*:=[[:space:]]*//' | tr -d '\t ')
+        fi
+        # Ensure VERSION is not empty
+        if [ -z "$VERSION" ]; then
+          VERSION="1.00.0"
+          echo "Warning: Could not extract version, using default: $VERSION"
         fi
         echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
         echo "Building version: $VERSION"
@@ -116,7 +128,7 @@ jobs:
 
     - name: Create Draft Release (Tag Push)
       uses: softprops/action-gh-release@v1
-      if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+      if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
       with:
         draft: true
         prerelease: false
