@@ -46,30 +46,34 @@ jobs:
 
     - name: Extract version from tag or Makefile
       id: version
+      shell: bash
       run: |
-        if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" =~ refs/tags/.* ]]; then
+        if [ "${{ github.event_name }}" = "push" ] && echo "${{ github.ref }}" | grep -q "refs/tags/"; then
           # Handle both v1.00.0 and 1.00.0 tag formats
-          if [[ "${{ github.ref }}" =~ refs/tags/v.* ]]; then
-            VERSION=${GITHUB_REF#refs/tags/v}
+          if echo "${{ github.ref }}" | grep -q "refs/tags/v"; then
+            VERSION=$(echo "${{ github.ref }}" | sed 's/refs\/tags\/v//')
           else
-            VERSION=${GITHUB_REF#refs/tags/}
+            VERSION=$(echo "${{ github.ref }}" | sed 's/refs\/tags\///')
           fi
         else
           # Extract from Makefile, handle potential whitespace/tabs
-          VERSION=$(grep "APP_VERSION" Makefile | sed 's/.*:=[[:space:]]*//' | tr -d '\t ')
+          VERSION=$(grep "^APP_VERSION" Makefile | head -1 | sed 's/.*:=[[:space:]]*//' | tr -d '\t ')
         fi
         # Ensure VERSION is not empty
         if [ -z "$VERSION" ]; then
-          VERSION="1.00.0"
+          VERSION="1.00.1"
           echo "Warning: Could not extract version, using default: $VERSION"
         fi
         echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
         echo "Building version: $VERSION"
 
     - name: Update version in Makefile
+      shell: bash
       run: |
         sed -i "s/APP_VERSION :=.*/APP_VERSION := ${{ steps.version.outputs.VERSION }}/" Makefile
         echo "Updated Makefile version to: ${{ steps.version.outputs.VERSION }}"
+        # Verify the update
+        grep "APP_VERSION" Makefile
 
     - name: Building aio-switch-updater
       run: |
@@ -105,6 +109,7 @@ jobs:
 
     - name: Generate changelog
       id: changelog
+      shell: bash
       run: |
         # Get commit messages since last tag for changelog
         if git describe --tags --abbrev=0 HEAD^ >/dev/null 2>&1; then

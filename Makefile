@@ -22,7 +22,7 @@ DATA		:=	data
 INCLUDES	:=	include /lib/borealis/library/include/borealis/extern/nlohmann
 APP_TITLE	:=	All-in-One Switch Updater
 APP_AUTHOR	:=	HamletDuFromage, eXploitz
-APP_VERSION :=	1.00.0
+APP_VERSION :=	1.00.1
 TARGET		:=	$(notdir $(CURDIR))
 
 ROMFS				:=	resources
@@ -33,8 +33,9 @@ BOREALIS_RESOURCES	:=	romfs:/
 #---------------------------------------------------------------------------------
 # version control constants
 #---------------------------------------------------------------------------------
-#TARGET_VERSION	:= $(shell git describe --dirty --always --tags)
-#APP_VERSION		:= $(TARGET_VERSION)
+# Alternative: use git tags for versioning
+# TARGET_VERSION	:= $(shell git describe --dirty --always --tags)
+# APP_VERSION		:= $(TARGET_VERSION)
 
 #---------------------------------------------------------------------------------
 # options for code generation
