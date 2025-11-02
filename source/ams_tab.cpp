@@ -111,7 +111,7 @@ void AmsTab_Regular::CreateLists()
         brls::LabelStyle::DESCRIPTION,
         "menus/ams_update/ascent_label"_i18n,
         true));
-    CreateDownloadItems(util::getValueFromKey(cfws, "DeepSea"), false);
+    CreateDownloadItems(util::getValueFromKey(cfws, "Ascent"), false);
 }
 
 std::string AmsTab_Regular::GetRepoName(const std::string& repo)
