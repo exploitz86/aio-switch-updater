@@ -1,4 +1,4 @@
-name: Build AIO-switch-updater
+name: Build AIO-switch-updater-reborn
 
 on: 
   push:
@@ -8,9 +8,9 @@ on:
   workflow_dispatch:  # Manual trigger
 
 jobs:
-  AIO-switch-updater:
+  AIO-switch-updater-reborn:
     runs-on: ubuntu-latest
-    #container: hamletdufromage/devkita64_devkitarm
+    
     container: devkitpro/devkita64
     steps:
     - uses: actions/checkout@v4
@@ -20,9 +20,9 @@ jobs:
 
     - name: update repo
       run: |
-        git config --global --add safe.directory /__w/aio-switch-updater/aio-switch-updater/lib/borealis
-        git config --global --add safe.directory /__w/aio-switch-updater/aio-switch-updater
-        git config --global --add safe.directory /__w/aio-switch-updater/aio-switch-updater/TegraExplorer
+        git config --global --add safe.directory /__w/aio-switch-updater-reborn/aio-switch-updater-reborn/lib/borealis
+        git config --global --add safe.directory /__w/aio-switch-updater-reborn/aio-switch-updater-reborn
+        git config --global --add safe.directory /__w/aio-switch-updater-reborn/aio-switch-updater-reborn/TegraExplorer
 
     - name: setup environment and verify tools
       run: |
@@ -75,7 +75,7 @@ jobs:
         # Verify the update
         grep "APP_VERSION" Makefile
 
-    - name: Building aio-switch-updater
+    - name: Building aio-switch-updater-reborn
       run: |
         export DEVKITPRO=/opt/devkitpro
         export DEVKITA64=/opt/devkitpro/devkitA64
@@ -86,26 +86,26 @@ jobs:
         make -j$(nproc)
         
         # Verify build outputs
-        ls -la aio-switch-updater.nro
-        ls -la aio-switch-updater.nacp
+        ls -la aio-switch-updater-reborn.nro
+        ls -la aio-switch-updater-reborn.nacp
 
     - name: Create release package
       run: |
         # Create release directory structure
-        mkdir -p release/switch/aio-switch-updater
+        mkdir -p release/switch/aio-switch-updater-reborn
         
         # Copy only the .nro file
-        cp aio-switch-updater.nro release/switch/aio-switch-updater/
+        cp aio-switch-updater-reborn.nro release/switch/aio-switch-updater-reborn/
         
         # Create the release archive
         cd release
-        zip -r ../aio-switch-updater.zip .
+        zip -r ../aio-switch-updater-reborn.zip .
         cd ..
         
         echo "Release package created:"
-        ls -la aio-switch-updater.zip
+        ls -la aio-switch-updater-reborn.zip
         echo "Contents:"
-        unzip -l aio-switch-updater.zip
+        unzip -l aio-switch-updater-reborn.zip
 
     - name: Generate changelog
       id: changelog
@@ -126,7 +126,7 @@ jobs:
         $CHANGELOG
         
         ## Installation
-        1. Download \`aio-switch-updater.zip\`
+        1. Download \`aio-switch-updater-reborn.zip\`
         2. Extract to the root of your SD card
         3. Launch from the Homebrew Menu
         EOF
@@ -137,9 +137,9 @@ jobs:
       with:
         draft: true
         prerelease: false
-        name: "AIO Switch Updater v${{ steps.version.outputs.VERSION }}"
+        name: "AIO Switch Updater Reborn v${{ steps.version.outputs.VERSION }}"
         body_path: CHANGELOG.md
-        files: aio-switch-updater.zip
+        files: aio-switch-updater-reborn.zip
         token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Create Draft Release (Manual Trigger)
@@ -149,13 +149,13 @@ jobs:
         draft: true
         prerelease: false
         tag_name: "v${{ steps.version.outputs.VERSION }}-build-${{ github.run_number }}"
-        name: "AIO Switch Updater v${{ steps.version.outputs.VERSION }} (Build ${{ github.run_number }})"
+        name: "AIO Switch Updater Reborn v${{ steps.version.outputs.VERSION }} (Build ${{ github.run_number }})"
         body_path: CHANGELOG.md
-        files: aio-switch-updater.zip
+        files: aio-switch-updater-reborn.zip
         token: ${{ secrets.GITHUB_TOKEN }}
         
     - uses: actions/upload-artifact@v4
       with:
-        name: aio-switch-updater-v${{ steps.version.outputs.VERSION }}
-        path: aio-switch-updater.zip
+        name: aio-switch-updater-reborn-v${{ steps.version.outputs.VERSION }}
+        path: aio-switch-updater-reborn.zip
         retention-days: 90

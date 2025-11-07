@@ -1,10 +1,10 @@
 {
   "about": {
-    "title": "일체형 닌텐도 스위치 업데이터",
-    "copyright": "일체형 닌텐도 스위치 업데이터는 GPL-3.0에 따라 라이센스가 허가되었습니다.",
+    "title": "All-in-One Nintendo Switch Updater Reborn",
+    "copyright": "All-in-One Nintendo Switch Updater Reborn는 GPL-3.0에 따라 라이센스가 허가되었습니다.",
     "disclaimers_title": "면책 조항",
     "disclaimers": "◆ 기본 GBAtemp 스레드에서 미러링된 치트 코드를 제외하고 eXploitz는 아무 것도 호스팅하지 않습니다. 모든 크레딧은 해당 소유자에게 돌아갑니다.\n◆ 링크는 30분마다 새로 고쳐집니다. 30분이 지나도 링크에 문제가 있다면 Github에 등록해 주세요.",
-    "donate": "◆ 앱이 마음에 드시나요? 원 작성자를 지원하기 위해 기부를 고려해보세요: 'https://git.io/donate_homlet'"
+    "donate": "◆ 앱이 마음에 드시나요? 저의 노력을 지원하기 위해 기부를 고려해보세요: https://ko-fi.com/exploitz'"
   },
   "cheats": {
     "installed": "설치된 치트",

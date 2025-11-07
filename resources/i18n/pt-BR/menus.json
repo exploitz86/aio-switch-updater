@@ -1,10 +1,10 @@
 {
   "about": {
-    "title": "Atualizador tudo em um Nintendo Switch",
-    "copyright": "AIO-Switch-Updater usa a licença GPL-3.0",
+    "title": "All-in-One Nintendo Switch Updater Reborn",
+    "copyright": "AIO-Switch-Updater-Reborn usa a licença GPL-3.0",
     "disclaimers_title": "Avisos",
     "disclaimers": "◆ Além dos códigos de trapaça que são espelhados do tópico principal do GBAtemp, o eXploitz não hospeda nada. Todos os créditos vão para os respectivos proprietários.\n◆ Os links são atualizados a cada 30 minutos. Se um link permanecer quebrado após 30 minutos, por favor, abra uma issue no Github.",
-    "donate": "◆ Gostou do aplicativo? Considere fazer uma doação para apoiar o autor original: 'https://git.io/donate_homlet'"
+    "donate": "◆ Gostou do aplicativo? Considere fazer uma doação para apoiar meus esforços: https://ko-fi.com/exploitz'"
   },
   "cheats": {
     "installed": "Códigos de trapaça instalados",
@@ -32,7 +32,7 @@
     "kb_error": "Se o teclado não aparecer, tente executar o aplicativo com acesso total à RAM (substituição de título).",
     "cheatslips_see_more": "Ver mais",
     "cheatslips_dl_cheats": "Baixar códigos de trapaça e voltar",
-    "bid_not_found": "Não foi possível obter o ID de compilação. Tente executar o AIO-Switch-Updater no modo applet enquanto o jogo está sendo executado.",
+    "bid_not_found": "Não foi possível obter o ID de compilação. Tente executar o AIO-Switch-Updater-Reborn no modo applet enquanto o jogo está sendo executado.",
     "exclude_titles": "Excluir títulos",
     "exclude_titles_desc": "Você pode desativar as atualizações de trapaça com este menu.",
     "exclude_titles_save": "Salvar escolha e retornar",
@@ -42,7 +42,7 @@
     "bid_tid_info": "Esses códigos de trapaça serão adicionados ao final do seu arquivo de trapaça existente.",
     "dl_cheatcodes": "Baixar código de trapaça",
     "dl_successful": "Código de trapaça baixado com sucesso:\n{}",
-    "applet_mode_not_supported": "Devido às restrições de memória, no modo applet você só pode obter códigos de trapaça para o jogo que está jogando atualmente. Por favor, execute o AIO-Switch-Updater através da substituição de título para baixar códigos de trapaça para qualquer jogo que você possua.",
+    "applet_mode_not_supported": "Devido às restrições de memória, no modo applet você só pode obter códigos de trapaça para o jogo que está jogando atualmente. Por favor, execute o AIO-Switch-Updater-Reborn através da substituição de título para baixar códigos de trapaça para qualquer jogo que você possua.",
     "cheatfile_label": "Aqui estão os códigos de trapaça listados no arquivo {}",
     "not_found": "Nenhum código de trapaça adequado foi encontrado para este jogo",
     "show_existing": "Mostrar existentes",
@@ -74,7 +74,7 @@
     "cancel": "Cancelar",
     "off": "Desligado",
     "selected": "Selecionado",
-    "applet_mode_not_supported": "Este recurso não está disponível no modo applet. Por favor, inicie o AIO-Switch-Updater através de substituição de título para acessá-lo.",
+    "applet_mode_not_supported": "Este recurso não está disponível no modo applet. Por favor, inicie o AIO-Switch-Updater-Reborn através de substituição de título para acessá-lo.",
     "nothing_to_see": "Nada para ver aqui!"
   },
   "changelog": {
@@ -99,7 +99,7 @@
   "pro_con": {
     "title": "Troca de cor do controle Pro",
     "desc": "Você pode alterar a cor interna do seu controle Pro. Certifique-se de que ele esteja definido como jogador 1.",
-    "warning": "O AIO-Switch-Updater atualmente não suporta a troca da cor do grip do controle Pro. Use o Joy-Con Toolkit no PC em vez disso.",
+    "warning": "O AIO-Switch-Updater-Reborn atualmente não suporta a troca da cor do grip do controle Pro. Use o Joy-Con Toolkit no PC em vez disso.",
     "label": "Troca de cor do controle Pro",
     "backing_up": "Fazendo backup do perfil de cor.",
     "all_done": "Tudo pronto! Talvez seja necessário ligar e desligar o controle para que a alteração entre em vigor.",
@@ -151,7 +151,7 @@
     "inject_payloads": "Injetar payload",
     "getting_payload": "Obtendo payload",
     "update_app": "Atualizar o aplicativo (v{})",
-    "dl_app": "Baixando:\nAIO-switch-updater\n\nDe:\n",
+    "dl_app": "Baixando:\nAIO-Switch-Updater-Reborn\n\nDe:\n",
     "changelog": "Histórico de alterações",
     "clean_up": "Limpar arquivos baixados",
     "hide_tabs": "Ocultar abas",
@@ -183,7 +183,7 @@
     "mariko_rev": "◆ Revisão do Mariko",
     "ascent_label": "◆ O Ascent do exploitz86 é um pacote CFW baseado no DeepSea da equipe Neptune que inclui o Atmosphère, Hekate e vários aplicativos homebrew.",
     "getting_ams": "Obtendo o Atmosphère",
-    "custom_packs_label": "◆ Aqui estão os pacotes listados no arquivo {}. Esteja ciente de que eles não são endossados pelo AIO-Switch-Updater, então certifique-se de confiar na fonte deles.",
+    "custom_packs_label": "◆ Aqui estão os pacotes listados no arquivo {}. Esteja ciente de que eles não são endossados pelo AIO-Switch-Updater-Reborn, então certifique-se de confiar na fonte deles.",
     "custom_packs_ams": "◆ Downloads contendo o custom firmware Atmosphère.",
     "custom_packs_misc": "◆ Downloads contendo homebrew e ferramentas.",
     "custom_download": "Download personalizado",

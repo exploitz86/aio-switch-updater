@@ -1,10 +1,10 @@
 {
   "about": {
-    "title": "All-in-One Nintendo Switch Updater",
-    "copyright": "AIO-Switch-Updater est publié sous licence GPL-3.0",
+    "title": "All-in-One Nintendo Switch Updater Reborn",
+    "copyright": "AIO-Switch-Updater-Reborn est publié sous licence GPL-3.0",
     "disclaimers_title": "Avis de non-responsabilité",
     "disclaimers": "◆ eXploitz n'héberge rien à l'exception d'une copie des codes de triche du topic principal de GBAtemp. Ils appartiennent à leurs auteurs respectifs.\n Les liens sont actualisés toutes les 30 minutes. Si un lien reste inactif après 30 minutes, merci de bien vouloir ouvrir une issue sur GitHub.",
-    "donate": "◆ Vous aimez cette application ? Faites un don pour soutenir l'auteur original : 'https://git.io/donate_homlet'"
+    "donate": "\u25c6 Vous aimez cette application ? Faites un don pour soutenir mes efforts : https://ko-fi.com/exploitz'"
   },
   "cheats": {
     "installed": "Codes de triche installés",
@@ -33,7 +33,7 @@
     "kb_error": "Si le clavier n'apparaît pas, esayez de lancer l'application avec un accès complet à la RAM (redirection d'application)",
     "cheatslips_see_more": "Voir plus",
     "cheatslips_dl_cheats": "Téléchargement des codes de triche et retour",
-    "bid_not_found": "Impossible d'obtenir l'ID de version. Essayez de lancer AIO-Switch-Updater en mode applet quand le jeu est en cours d'exécution.",
+    "bid_not_found": "Impossible d'obtenir l'ID de version. Essayez de lancer AIO-Switch-Updater-Reborn en mode applet quand le jeu est en cours d'exécution.",
     "exclude_titles": "Exclure des titres",
     "exclude_titles_desc": "Vous pouvez desactiver les mises à jour des codes de triche dans ce menu",
     "exclude_titles_save": "Enregistrer et retour",
@@ -41,7 +41,7 @@
     "bid_tid_info": "Ces codes seront ajoutés à la fin du fichier de triche existant.",
     "dl_cheatcodes": "Télécharger un code de triche",
     "dl_successful": "Téléchargement du code de triche réussi :\n{}",
-    "applet_mode_not_supported": "À cause de contraintes de mémoire du mode applet, vous ne pouvez récupérer que les codes de triche pour le jeu auquel vous être en train de jouer. Pour télécharger les codes de triche de tout autre jeu installé, veuillez lancer AIO-Switch-Updater via la redirection d'application.",
+    "applet_mode_not_supported": "À cause de contraintes de mémoire du mode applet, vous ne pouvez récupérer que les codes de triche pour le jeu auquel vous êtes en train de jouer. Pour télécharger les codes de triche de tout autre jeu installé, veuillez lancer AIO-Switch-Updater-Reborn via la redirection d'application.",
     "cheatfile_label": "Voici les codes de triche listés dans le fichier {}",
     "not_found": "Aucun code de triche valide n'a été trouvé pour ce jeu",
     "show_existing": "Montrer les codes de triche existants",
@@ -75,7 +75,7 @@
     "cancel": "Annuler",
     "off": "Non",
     "selected": "Sélectionné",
-    "applet_mode_not_supported": "Cette fonctionnalité n'est pas disponible en mode applet. Veuillez lancer AIO-Switch-Updater via la redirection d'application pour l'utiliser.",
+    "applet_mode_not_supported": "Cette fonctionnalité n'est pas disponible en mode applet. Veuillez lancer AIO-Switch-Updater-Reborn via la redirection d'application pour l'utiliser.",
     "nothing_to_see": "Circulez, il n'y a rien à voir !"
   },
   "changelog": {
@@ -100,7 +100,7 @@
   "pro_con": {
     "title": "Modification de la couleur de la manette Pro",
     "desc": "Vous pouvez changer la couleur interne de la manette Pro. Vérifiez qu'elle soit réglée sur joueur 1.",
-    "warning": "AIO-Switch-Updater ne permet pas encore de changer la couleur des poignées des manettes pro. Utilisez plutôt Joy-Con Toolkit sur PC.",
+    "warning": "AIO-Switch-Updater-Reborn ne permet pas encore de changer la couleur des poignées des manettes pro. Utilisez plutôt Joy-Con Toolkit sur PC.",
     "label": "Modification de la couleur de la manette Pro",
     "backing_up": "Enregistrement du profil de couleur.",
     "all_done": "Terminé ! Vous devrez peut-être éteindre et redémarrer la manette pour que les changements prennent effet.",
@@ -152,7 +152,7 @@
     "inject_payloads": "Injecter un payload",
     "getting_payload": "Téléchargement du payload",
     "update_app": "Mettre à jour l'application (v{})",
-    "dl_app": "Téléchargement en cours :\nAIO-switch-updater\n\nDepuis :\n",
+    "dl_app": "Téléchargement en cours :\nAIO-Switch-Updater-Reborn\n\nDepuis :\n",
     "changelog": "Journal des modifications",
     "clean_up": "Nettoyage des fichiers téléchargés",
     "hide_tabs": "Masquer des onglets",
@@ -172,7 +172,7 @@
     "not_an_archive": "Le fichier téléchargé n'est pas une archive zip. Cela est probablement dû à un lien rompu. Si le problème persiste après plus de 30 minutes, veuillez ouvrir une issue sur GitHub.",
     "overwrite_inis": "Voulez-vous écraser les fichiers de configuration .ini déja présents ?",
     "set_hekate_reboot_payload": "Voulez-vous copier le payload Hekate `{}` vers `{}` ?",
-    "applet_webbrowser": "AIO-Switch-Updater est exécuté en mode applet ou via un forwarder\\n\\ue016 Redémarrez AIO-Switch-Updater via hbmenu : sur le menu principal de la Switch, maintenez [R] en sélectionnant un jeu."
+    "applet_webbrowser": "AIO-Switch-Updater-Reborn est exécuté en mode applet ou via un forwarder\\n\\ue016 Redémarrez AIO-Switch-Updater-Reborn via hbmenu : sur le menu principal de la Switch, maintenez [R] en sélectionnant un jeu."
   },
   "ams_update": {
     "reboot_rcm": "La Switch va maintenant finaliser l'installation en redémarrant avec un payload spécial.",
@@ -184,7 +184,7 @@
     "mariko_rev": "◆ Modèle Mariko",
     "ascent_label": "◆ Ascent par exploitz86 est un pack CFW basé sur DeepSea de la Team Neptune qui regroupe Atmosphère, hekate et plusieurs apps homebrew.",
     "getting_ams": "Installer Atmopshère",
-    "custom_packs_label": "◆ Voici les paquets listés dans le fichier {}. Assurez-vous de la fiabilité de leur source car il ne bénéficient d'aucun support de la part d'AIO-Switch-Updater.",
+    "custom_packs_label": "◆ Voici les paquets listés dans le fichier {}. Assurez-vous de la fiabilité de leur source car il ne bénéficient d'aucun support de la part d'AIO-Switch-Updater-Reborn.",
     "custom_packs_ams": "◆ Téléchargements contenant le custom firmware Atmosphère.",
     "custom_packs_misc": "◆ Téléchargements contenant des homebrews et des outils.",
     "custom_download": "Téléchargement personnalisé",

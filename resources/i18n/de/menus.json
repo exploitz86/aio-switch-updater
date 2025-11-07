@@ -1,9 +1,9 @@
 {
   "about": {
-    "title": "All-in-One Nintendo Switch Updater",
-    "copyright": "AIO-Switch-Updater ist lizensiert unter: GPL-3.0",
+    "title": "All-in-One Nintendo Switch Updater Reborn",
+    "copyright": "AIO-Switch-Updater-Reborn ist lizensiert unter: GPL-3.0",
     "disclaimers": "◆ Außer Cheat-Codes, die vom Haupt-GBAtemp.net-Thread stammen, hostet eXploitz nichts selber. Alle Anerkennung geht an die jeweiligen Besitzer.\n◆ Links werden alle 30 Minuten aktualisiert. Wenn ein Link nach 30 Minuten weiterhin nicht funktioniert, eröffne bitte ein GitHub-Issue.\n",
-    "donate": "◆ Gefällt dir die App? Hier kannst du den ursprünglichen Autor unterstützen: 'https://git.io/donate_homlet'"
+    "donate": "\u25c6 Gefällt dir die App? Unterstütze meine Arbeit mit einer Spende: https://ko-fi.com/exploitz'"
   },
   "cheats": {
     "installed": "Installierte Cheats",
@@ -30,7 +30,7 @@
     "kb_error": "Wenn die Tastatur nicht auftaucht, starte die App mit vollem RAM-Zugriff. (Title Override)",
     "cheatslips_see_more": "Weiteres",
     "cheatslips_dl_cheats": "Lade Cheats & gehe zurück",
-    "bid_not_found": "ID konnte nicht abgerufen werden. Versuche, AIO-Switch-Updater im Applet-Modus zu starten, während das Spiel läuft.",
+    "bid_not_found": "ID konnte nicht abgerufen werden. Versuche, AIO-Switch-Updater-Reborn im Applet-Modus zu starten, während das Spiel läuft.",
     "exclude_titles": "Spiele ausschließen",
     "exclude_titles_desc": "Mit diesem Menü kannst du Cheat-Udates ausschließen",
     "exclude_titles_save": "Auswahl speichern und zurück",
@@ -40,7 +40,7 @@
     "bid_tid_info": "Diese Cheats werden am Ende deiner bestehenden Cheat-Datei hinzugefügt.",
     "dl_cheatcodes": "Cheat-Code herunterladen",
     "dl_successful": "Folgender Cheat-Code wurde erfolgreich heruntergeladen:\\n{}",
-    "applet_mode_not_supported": "Aufgrund von Speicherbeschränkungen können im Applet-Modus nur Cheat-Codes für das Spiel abgerufen werden, das gerade gespielt wird. Bitte starte den AIO-Switch-Updater über die Title Override, um Cheat-Codes für alle verfügbaren Spiele herunterzuladen.",
+    "applet_mode_not_supported": "Aufgrund von Speicherbeschränkungen können im Applet-Modus nur Cheat-Codes für das Spiel abgerufen werden, das gerade gespielt wird. Bitte starte den AIO-Switch-Updater-Reborn über die Title Override, um Cheat-Codes für alle verfügbaren Spiele herunterzuladen.",
     "cheatfile_label": "Hier sind die Cheat-Codes, die in der Datei {} aufgelistet sind",
     "not_found": "Es konnten keine geeigneten Cheat-Codes für dieses Spiel gefunden werden",
     "show_existing": "Verfügbares anzeigen",
@@ -68,7 +68,7 @@
     "cancel": "Abbrechen",
     "off": "Ausschalten",
     "selected": "Ausgewählt",
-    "applet_mode_not_supported": "Diese Funktion ist im Applet-Modus nicht verfügbar. Bitte starte den AIO-Switch-Updater über die Title Override, um darauf zuzugreifen."
+    "applet_mode_not_supported": "Diese Funktion ist im Applet-Modus nicht verfügbar. Bitte starte den AIO-Switch-Updater-Reborn über die Title Override, um darauf zuzugreifen."
   },
   "changelog": {
     "changelog": "Änderungen"
@@ -141,7 +141,7 @@
     "dl_payloads": "Lade Payloads hierhin herunter: ",
     "inject_payloads": "Injiziere Payload",
     "update_app": "Update die App (v{})",
-    "dl_app": "Lade herunter:\nAIO-Switch-Updater\n\nVon:\n",
+    "dl_app": "Lade herunter:\nAIO-Switch-Updater-Reborn\n\nVon:\n",
     "changelog": "Änderungen",
     "clean_up": "Lösche übrig gebliebende Dateien",
     "hide_tabs": "Tabs verstecken",
@@ -173,7 +173,7 @@
     "mariko_rev": "◆ Mariko Revision",
     "ascent_label": "◆ Ascent von exploitz86 ist ein CFW-Paket basierend auf Team Neptunes DeepSea, das Atmosphère, Hekate und verschiedene Homebrew-Anwendungen enthält.",
     "getting_ams": "Atmosphère herunterladen",
-    "custom_packs_label": "◆ Hier sind die in der {}-Datei aufgelisteten Pakete. Bitte beachte, dass diese nicht von AIO-Switch-Updater überprüft werden, also stelle sicher, dass diese Quelle vertrauenswürdig ist!",
+    "custom_packs_label": "◆ Hier sind die in der {}-Datei aufgelisteten Pakete. Bitte beachte, dass diese nicht von AIO-Switch-Updater-Reborn überprüft werden, also stelle sicher, dass diese Quelle vertrauenswürdig ist!",
     "custom_packs_ams": "◆ Alternative benutzerdefinierte Firmware laden",
     "custom_packs_misc": "◆ Homebrew und Tools laden",
     "custom_download": "Custom downloads",

@@ -1,10 +1,10 @@
 {
   "about": {
-    "title": "All-in-One Nintendo Switch Updater",
-    "copyright": "AIO-Switch-Updater依據GNU公共授權條款GPL 3.0版本開發",
+    "title": "All-in-One Nintendo Switch Updater Reborn",
+    "copyright": "AIO-Switch-Updater-Reborn依據GNU公共授權條款GPL 3.0版本開發",
     "disclaimers_title": "版權宣告",
     "disclaimers": "◆ eXploitz僅鏡像使用Gbatemp.net論壇的金手指，伺服器沒有儲存或託管任何相關檔案，感謝所有提供金手指的創作者。\n◆ 程式檔案資料庫會每隔30分鐘自動擷取更新。如果更新連結超過30分鐘仍無法正常使用，請使用GitHub提出問題來進行回報。\n",
-    "donate": "◆ 喜歡我們開發的app嗎? 歡迎贊助支持原始作者: 'https://git.io/donate_homlet'"
+    "donate": "◆ 喜歡我們開發的app嗎? 歡迎贊助支持我的努力: https://ko-fi.com/exploitz'"
   },
   "cheats": {
     "installed": "已安裝金手指",
@@ -33,7 +33,7 @@
     "kb_error": "如果無法顯示虛擬鍵盤，請嘗試在能存取完整記憶體的一般模式下啟動本程式(title重新導向)",
     "cheatslips_see_more": "檢視完整代碼",
     "cheatslips_dl_cheats": "下載金手指後返回",
-    "bid_not_found": "無法取得build ID。當遊戲正在執行時，請嘗試在applet模式內執行AIO-Switch-Updater",
+    "bid_not_found": "無法取得build ID。當遊戲正在執行時，請嘗試在applet模式內執行AIO-Switch-Updater-Reborn",
     "exclude_titles": "更新排除名單",
     "exclude_titles_desc": "可以透過變更此設定來排除沒有安裝對應遊戲的金手指更新",
     "exclude_titles_save": "儲存變更並返回",
@@ -43,7 +43,7 @@
     "bid_tid_info": "下載的金手指將會放置排列在目前已有的金手指項目之後。",
     "dl_cheatcodes": "下載金手指",
     "dl_successful": "下列金手指已下載完成:\n{}",
-    "applet_mode_not_supported": "由於記憶體限制，在applet模式下，只能擷取目前正在玩的遊戲的金手指。請重新執行AIO-Switch-Updater並透過title重新導向來下載其他遊戲的金手指",
+    "applet_mode_not_supported": "由於記憶體限制，在applet模式下，只能擷取目前正在玩的遊戲的金手指。請重新執行AIO-Switch-Updater-Reborn並透過title重新導向來下載其他遊戲的金手指",
     "cheatfile_label": "列出檔案內的金手指{}",
     "not_found": "沒有此遊戲的金手指",
     "show_existing": "顯示目前已有的",
@@ -75,7 +75,7 @@
     "cancel": "取消",
     "off": "關",
     "selected": "已選擇",
-    "applet_mode_not_supported": "此功能在applet模式內無法使用。請重新執行AIO-Switch-Updater並透過title重新導向來進行存取",
+    "applet_mode_not_supported": "此功能在applet模式內無法使用。請重新執行AIO-Switch-Updater-Reborn並透過title重新導向來進行存取",
     "nothing_to_see": "沒有符合的項目!"
   },
   "changelog": {
@@ -152,7 +152,7 @@
     "inject_payloads": "載入注入檔案",
     "getting_payload": "下載注入檔案",
     "update_app": "更新app (v{})",
-    "dl_app": "正在下載:\nAIO-Switch-Updater\n\n來源:\n",
+    "dl_app": "正在下載:\nAIO-Switch-Updater-Reborn\n\n來源:\n",
     "changelog": "更新履歷",
     "clean_up": "清空下載清單",
     "hide_tabs": "隱藏分頁",
@@ -184,7 +184,7 @@
     "mariko_rev": "◆ Mariko revision",
     "ascent_label": "◆ Ascent是由exploitz86基於Team Neptune的DeepSea開發的CFW整合套件，包括Atmosphère、hekate與數種第三方自製程式",
     "getting_ams": "正在擷取 Atmosphère",
-    "custom_packs_label": "◆ 來自 {} 的檔案。請注意，這些列出的檔案均未經過AIO-Switch-Updater驗證，因此安裝前請確保檔案來源為可信任的。",
+    "custom_packs_label": "◆ 來自 {} 的檔案。請注意，這些列出的檔案均未經過AIO-Switch-Updater-Reborn驗證，因此安裝前請確保檔案來源為可信任的。",
     "custom_packs_ams": "◆ 下載項目包含Atmosphère與韌體整合套件",
     "custom_packs_misc": "◆ 下載項目包含第三方自製程式與工具",
     "custom_download": "自訂下載",

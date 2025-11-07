@@ -1,10 +1,10 @@
 {
   "about": {
-    "title": "Utilizator Nintendo Switch All-in-One",
-    "copyright": "AIO-Switch-Updater este licențiat conform GPL-3.0",
+    "title": "All-in-One Nintendo Switch Updater Reborn",
+    "copyright": "AIO-Switch-Updater-Reborn este licențiat conform GPL-3.0",
     "disclaimers_title": "Declinări de răspundere",
     "disclaimers": "◆ În afară de codurile de înșelăciune care sunt reflectate din firul principal GBAtemp, eXploitz nu găzduiește nimic. Toate creditele revin proprietarilor respectivi.\n◆ Linkurile sunt reîmprospătate la fiecare 30 de minute. Dacă un link rămâne întrerupt. după ce au trecut 30 de minute, vă rugăm să deschideți o problemă Github.",
-    "donate": "◆ Îți place aplicația? Luați în considerare donarea pentru a sprijini autorul original: 'https://git.io/donate_homlet'"
+    "donate": "◆ Îți place aplicația? Luați în considerare donarea pentru a sprijini eforturile mele: https://ko-fi.com/exploitz'"
   },
   "cheats": {
     "installed": "Trucuri instalate",
@@ -33,7 +33,7 @@
     "kb_error": "Dacă tastatura nu s-a afișat, încercați să rulați aplicația cu acces complet la RAM (override titlu)",
     "cheatslips_see_more": "Vezi mai multe",
     "cheatslips_dl_cheats": "Descărcați trișări și întoarceți-vă",
-    "bid_not_found": "Nu s-a putut obține ID-ul versiunii. Încercați să lansați AIO-Switch-Updater în modul applet în timp ce jocul rulează.",
+    "bid_not_found": "Nu s-a putut obține ID-ul versiunii. Încercați să lansați AIO-Switch-Updater-Reborn în modul applet în timp ce jocul rulează.",
     "exclude_titles": "Excludeți titluri",
     "exclude_titles_desc": "Puteți dezactiva actualizările cheat cu acest meniu",
     "exclude_titles_save": "Salvați alegerea și reveniți",
@@ -43,7 +43,7 @@
     "bid_tid_info": "Aceste trișări vor fi adăugate la sfârșitul fișierului de cheat existent.",
     "dl_cheatcodes": "Descărcați codul de cheat",
     "dl_successful": "S-a descărcat cu succes următorul cod de cheat:\n{}",
-    "applet_mode_not_supported": "Din cauza constrângerilor de memorie, în modul applet puteți prelua doar coduri de cheat pentru jocul pe care îl jucați în prezent. Lansați AIO-Switch-Updater prin anularea titlului pentru a descărca coduri de cheat pentru orice joc pe care îl dețineți.",
+    "applet_mode_not_supported": "Din cauza constrângerilor de memorie, în modul applet puteți prelua doar coduri de cheat pentru jocul pe care îl jucați în prezent. Lansați AIO-Switch-Updater-Reborn prin anularea titlului pentru a descărca coduri de cheat pentru orice joc pe care îl dețineți.",
     "cheatfile_label": "Iată codurile de cheat listate în fișierul {}",
     "not_found": "Nu au putut fi găsite coduri de cheat adecvate pentru acest joc",
     "show_existing": "Afișați existența",
@@ -75,7 +75,7 @@
     "cancel": "Anulează",
     "off": "Oprit",
     "selected": "Selectat",
-    "applet_mode_not_supported": "Această caracteristică nu este disponibilă în modul applet. Lansați AIO-Switch-Updater prin înlocuirea titlului pentru a o accesa.",
+    "applet_mode_not_supported": "Această caracteristică nu este disponibilă în modul applet. Lansați AIO-Switch-Updater-Reborn prin înlocuirea titlului pentru a o accesa.",
     "nothing_to_see": "Nimic de văzut aici!"
   },
   "changelog": {
@@ -100,7 +100,7 @@
   "pro_con": {
     "title": "Schimbator de culori pentru controler Pro",
     "desc": "Puteți schimba culoarea internă a controlerului dvs. Pro. Asigurați-vă că este setat la player 1.",
-    "warning": "AIO-Switch-Updater nu acceptă în prezent schimbarea culorii prindere a controlerului Pro. Folosiți în schimb Joy-Con Toolkit pe PC.",
+    "warning": "AIO-Switch-Updater-Reborn nu acceptă în prezent schimbarea culorii prindere a controlerului Pro. Folosiți în schimb Joy-Con Toolkit pe PC.",
     "label": "Schimbator de culori a controlerului Pro",
     "backing_up": "Se face backup pentru profilul de culoare.",
     "all_done": "Totul este gata! Poate fi necesar să porniți și să opriți controlerul pentru ca modificarea să intre în vigoare.",
@@ -152,7 +152,7 @@
     "inject_payloads": "Injectați sarcina utilă",
     "getting_payload": "Se primesc sarcina utilă",
     "update_app": "Actualizează aplicația (v{})",
-    "dl_app": "Se descarcă:\nAIO-switch-updater\n\nDe la:\n",
+    "dl_app": "Se descarcă:\nAIO-Switch-Updater-Reborn\n\nDe la:\n",
     "changelog": "Jurnal de modificări",
     "clean_up": "Curățați fișierele descărcate",
     "hide_tabs": "Ascunde filele",
@@ -184,7 +184,7 @@
     "mariko_rev": "◆ Revizie Mariko",
     "ascent_label": "◆ Ascent de exploitz86 este un pachet CFW bazat pe DeepSea de la Team Neptune care include Atmosphère, hekate și diverse aplicații homebrew.",
     "getting_ams": "Preluare Atmosphère",
-    "custom_packs_label": "◆ Aici sunt pachete listate în fișierul {}. Rețineți că acestea nu sunt aprobate de AIO-Switch-Updater, așa că asigurați-vă că aveți încredere în sursa lor.",
+    "custom_packs_label": "◆ Aici sunt pachete listate în fișierul {}. Rețineți că acestea nu sunt aprobate de AIO-Switch-Updater-Reborn, așa că asigurați-vă că aveți încredere în sursa lor.",
     "custom_packs_ams": "◆ Descărcări care conțin firmware-ul personalizat Atmosphère.",
     "custom_packs_misc": "◆ Descărcări care conțin homebrew și instrumente.",
     "custom_download": "Descărcare personalizată",

@@ -1,11 +1,11 @@
-# AIO-Switch-Updater
-![hbappstore](https://img.shields.io/endpoint?url=https%3A%2F%2Frunkit.io%2Fhomlet%2Fhbappstore-shieldsio%2Fbranches%2Fmaster%3Furl%3Dhttps%3A%2F%2Fswitchbru.com%2Fappstore%2Frepo.json%26name%3Daio-switch-updater)
-![releases](https://img.shields.io/github/downloads/exploitz86/AIO-switch-updater/total)
-[![Build AIO-switch-updater](https://github.com/exploitz86/aio-switch-updater/actions/workflows/main.yml/badge.svg)](https://github.com/exploitz86/aio-switch-updater/actions/workflows/main.yml)
-![tag](https://img.shields.io/github/v/release/exploitz86/AIO-switch-updater)
-![GitHub](https://img.shields.io/github/license/exploitz86/aio-switch-updater)
+# AIO-Switch-Updater-Reborn
+![hbappstore](https://img.shields.io/endpoint?url=https%3A%2F%2Frunkit.io%2Fhomlet%2Fhbappstore-shieldsio%2Fbranches%2Fmaster%3Furl%3Dhttps%3A%2F%2Fswitchbru.com%2Fappstore%2Frepo.json%26name%3Daio-switch-updater-reborn)
+![releases](https://img.shields.io/github/downloads/exploitz86/aio-switch-updater-reborn/total)
+[![Build AIO-switch-updater-reborn](https://github.com/exploitz86/aio-switch-updater-reborn/actions/workflows/main.yml/badge.svg)](https://github.com/exploitz86/aio-switch-updater-reborn/actions/workflows/main.yml)
+![tag](https://img.shields.io/github/v/release/exploitz86/aio-switch-updater-reborn)
+![GitHub](https://img.shields.io/github/license/exploitz86/aio-switch-updater-reborn)
 
-([![ko-fi](https://img.shields.io/badge/ko--fi-buy%20me%20a%20coffee-ff69b4)](https://ko-fi.com/exploitz))
+[![ko-fi](https://img.shields.io/badge/ko--fi-buy%20me%20a%20coffee-ff69b4)](https://ko-fi.com/exploitz)
 
 <p align="center">
 <img src = "icon.jpg"\><br>
@@ -16,19 +16,19 @@ A Nintendo Switch homebrew app to download and update CFWs, FWs and cheat codes.
 Works on **unpatched** (Erista) and **patched** (v2/Mariko) Switches.
 
 ## How to install
-Copy the `aio-switch-updater/` directory to `/switch/` on your sdcard.
+Copy the `aio-switch-updater-reborn/` directory to `/switch/` on your sdcard.
 
 ## Features
 ### ⬦ Update CFW
-- Update the Atmosphère Switch Custom Firmware. AIO-Switch-Updater uses a custom RCM payload to finalise the install as it can't be performed while HOS is running.
-  - If you would like to preserve additional files or directories, write their path (one line each) in `/config/aio-switch-updater/preserve.txt` and they won't be overwritten when updating.
-  - Place [this file](https://github.com/exploitz86/aio-switch-updater/blob/master/copy_files.txt) in `/config/aio-switch-updater/copy_files.txt` in order to have specific copy operations performed after each download. This is mainly meant for users with trinkets who want payloads automatically copied to a directory.
+- Update the Atmosphère Switch Custom Firmware. AIO-Switch-Updater-Reborn uses a custom RCM payload to finalise the install as it can't be performed while HOS is running.
+  - If you would like to preserve additional files or directories, write their path (one line each) in `/config/aio-switch-updater-reborn/preserve.txt` and they won't be overwritten when updating.
+  - Place [this file](https://github.com/exploitz86/aio-switch-updater-reborn/blob/master/copy_files.txt) in `/config/aio-switch-updater-reborn/copy_files.txt` in order to have specific copy operations performed after each download. This is mainly meant for users with trinkets who want payloads automatically copied to a directory.
 
 ### ⬦ Update Hekate/Payload
 - Download and update Hekate, as well as a selection of RCM payloads
 
 ### ⬦ Custom Downloads
-- A custom Atmosphère url can be entered in [this file](https://github.com/exploitz86/aio-switch-updater/blob/master/custom_packs.json). Once moved to `/config/aio-switch-updater/custom_packs.json`, it will show on the `Custom Download` menu. This can be used to support third-party packs through AIO-Switch-Updater. Packs whose name starts by `[PACK]` won't prompt for a Hekate download.
+- A custom Atmosphère url can be entered in [this file](https://github.com/exploitz86/aio-switch-updater-reborn/blob/master/custom_packs.json). Once moved to `/config/aio-switch-updater-reborn/custom_packs.json`, it will show on the `Custom Download` menu. This can be used to support third-party packs through AIO-Switch-Updater-Reborn. Packs whose name starts by `[PACK]` won't prompt for a Hekate download.
 - Non-Atmosphère downloads can also be added in the `misc` category.
 
 ### ⬦ Download firmwares
@@ -42,12 +42,12 @@ Copy the `aio-switch-updater/` directory to `/switch/` on your sdcard.
 ## Extras (in the `Tools` tab)
 - Reboot to specific payload.
 - Consult games with missing updates.
-- Change software color scheme of Joy-Cons. Additional color profiles can be found in the releases and should be copied to `config/aio-switch-updater/jc_profiles.json`. Use [this webpage](https://hamletdufromage.github.io/JC-color-picker/JCpicker.html) to generate your own profiles.
-- Change software color scheme of Pro Controllers (has to be paired as Player 1). Additional color profiles can be found in the releases and should be copied to `config/aio-switch-updater/pc_profiles.json`.
+- Change software color scheme of Joy-Cons. Additional color profiles can be found in the releases and should be copied to `config/aio-switch-updater-reborn/jc_profiles.json`. Use [this webpage](https://hamletdufromage.github.io/JC-color-picker/JCpicker.html) to generate your own profiles.
+- Change software color scheme of Pro Controllers (has to be paired as Player 1). Additional color profiles can be found in the releases and should be copied to `config/aio-switch-updater-reborn/pc_profiles.json`.
 - Consult installed cheat codes.
 - Launch the Switch's web browser.
-- Edit internet settings (DNS, IP address, MTU, etc). Add you own configs to `config/aio-switch-updater/internet.json`. You can find a template in the root of the repo.
-- Tabs can be hidden through the `Hide tabs` menu, and more entries can be hidden by manually editing [`config/aio-switch-updater/hide_tabs.json`](https://github.com/exploitz86/aio-switch-updater/blob/master/hide_tabs.json).
+- Edit internet settings (DNS, IP address, MTU, etc). Add you own configs to `config/aio-switch-updater-reborn/internet.json`. You can find a template in the root of the repo.
+- Tabs can be hidden through the `Hide tabs` menu, and more entries can be hidden by manually editing [`config/aio-switch-updater-reborn/hide_tabs.json`](https://github.com/exploitz86/aio-switch-updater-reborn/blob/master/hide_tabs.json).
 
 ## Screenshots
 <details><summary>Expand to view the screenshots</summary>
@@ -82,8 +82,8 @@ Use [`switch-ex-curl`](https://github.com/eXhumer/switch-ex-curl) instead of `sw
 
 Clone the repository
 ```bash
-$ git clone --recursive https://github.com/exploitz86/aio-switch-updater
-$ cd aio-switch-updater
+$ git clone --recursive https://github.com/exploitz86/aio-switch-updater-reborn
+$ cd aio-switch-updater-reborn
 ```
 
 Compile 
@@ -118,7 +118,7 @@ I do not own, host nor distribute any of the files that can be downloaded with t
 - [fennectech](https://github.com/fennectech) for helping test the app and providing suggestions.
 - Iliak for [Cheat Slips](https://www.cheatslips.com/).
 
-### Like the app? Please donate HamletDuFromage!
+### Like the app? originally it has been made by HamletDuFromage. Please consider donating to him!
 - Liberapay : <a href="https://liberapay.com/HamletDuFromage/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 - BTC: 1CoFc1bY5AHLP6Noe1zmqnJnp7ZWBxyo79
 - ETH: 0xf68f568e21a15934e0e9a6949288c3ca009140ba

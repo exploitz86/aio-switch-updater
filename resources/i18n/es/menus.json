@@ -1,10 +1,10 @@
 {
   "about": {
-    "title": "Actualizador Todo-en-Uno de Nintendo Switch",
-    "copyright": "AIO-Switch-Updater tiene licencia GPL-3.0",
+    "title": "All-in-One Nintendo Switch Updater Reborn",
+    "copyright": "AIO-Switch-Updater-Reborn tiene licencia GPL-3.0",
     "disclaimers_title": "Descargo de responsabilidad",
     "disclaimers": "◆ Aparte de trucos obtenidos del hilo principal de GBAtemp.net, eXploitz no provee nada. Todo el crédito pertenece a sus respectivos dueños.\n◆ Los enlaces se actualizan cada tres horas. Si un enlace sigue roto después de 3 horas, por favor abre una incidencia en GitHub.\n",
-    "donate": "◆ ¿Te gusta la app? Considera hacer una donación para apoyar al autor original: 'https://git.io/donate_homlet'"
+    "donate": "\u25c6 ¿Te gusta la app? Considera hacer una donación para apoyar mis esfuerzos: https://ko-fi.com/exploitz'"
   },
   "cheats": {
     "installed": "Trucos instalados",
@@ -33,7 +33,7 @@
     "kb_error": "Si el teclado no se muestra prueba ejecutando la app con acceso completo a la RAM (desde un juego)",
     "cheatslips_see_more": "Ver más",
     "cheatslips_dl_cheats": "Descargar trucos y volver",
-    "bid_not_found": "No podemos obtener el build ID. Prueba a ejecutar AIO-Switch-Updater en modo applet mientras el juego se está ejecutando.",
+    "bid_not_found": "No podemos obtener el build ID. Prueba a ejecutar AIO-Switch-Updater-Reborn en modo applet mientras el juego se está ejecutando.",
     "exclude_titles": "Excluir títulos",
     "exclude_titles_desc": "Puedes desactivar las actualizaciones de trucos con este menú",
     "exclude_titles_save": "Guardar elección y volver",
@@ -43,7 +43,7 @@
     "bid_tid_info": "Estos trucos seran añadidos al final del archivo de trucos actual.",
     "dl_cheatcodes": "Descargar trucos",
     "dl_successful": "Se ha descargado correctamente el siguiente truco:\n{}",
-    "applet_mode_not_supported": "Debido a limitaciones de memoria, en modo applet solo puedes obtener trucos para el juego al cual estás jugando actualmente. Por favor, ejecuta AIO-Switch-Updater desde de un juego para descargar trucos para cualquier juego que tengas.",
+    "applet_mode_not_supported": "Debido a limitaciones de memoria, en modo applet solo puedes obtener trucos para el juego al cual estás jugando actualmente. Por favor, ejecuta AIO-Switch-Updater-Reborn desde de un juego para descargar trucos para cualquier juego que tengas.",
     "cheatfile_label": "Aquí están los trucos listados en el archivo {}",
     "not_found": "No se pudieron encontrar trucos para este juego.",
     "show_existing": "Mostrar existente",
@@ -76,7 +76,7 @@
     "cancel": "Cancelar",
     "off": "Apagado",
     "selected": "Seleccionado",
-    "applet_mode_not_supported": "Esta característica no está disponible en modo applet. Por favor ejecuta AIO-Switch-Updater desde un juego para acceder a ella.",
+    "applet_mode_not_supported": "Esta característica no está disponible en modo applet. Por favor ejecuta AIO-Switch-Updater-Reborn desde un juego para acceder a ella.",
     "nothing_to_see": "¡Aquí no hay nada que ver!"
   },
   "changelog": {
@@ -101,7 +101,7 @@
   "pro_con": {
     "title": "Cambiar color del Pro Controller",
     "desc": "Puedes cambiar de manera interna el color de tu Pro Controller. Asegúrate de que esté asignado al jugador 1.",
-    "warning": "Actualmente AIO-Switch-Updater  no admite el cambio de color del grip del Pro Controller. Usa el Joy-Con Toolkit en PC.",
+    "warning": "Actualmente AIO-Switch-Updater-Reborn  no admite el cambio de color del grip del Pro Controller. Usa el Joy-Con Toolkit en PC.",
     "label": "Cambiar color del Pro controller",
     "backing_up": "Creando copia del perfil de color.",
     "all_done": "¡Finalizado! Puede que necesites apagar y encender el Pro Controller para que el cambio surta efecto.",
@@ -153,7 +153,7 @@
     "inject_payloads": "Inyectar payload",
     "getting_payload": "Obteniendo payload",
     "update_app": "Actualizar la aplicación (v{})",
-    "dl_app": "Descargando:\nAIO-switch-updater\n\nDesde:\n",
+    "dl_app": "Descargando:\nAIO-Switch-Updater-Reborn\n\nDesde:\n",
     "changelog": "Cambios",
     "clean_up": "Limpiar archivos descargados",
     "hide_tabs": "Pestañas ocultas",
@@ -185,7 +185,7 @@
     "mariko_rev": "◆ Revisión Mariko",
     "ascent_label": "◆ Ascent de exploitz86 es un pack de CFW basado en DeepSea del Team Neptune que incluye Atmosphère, hekate, y varios homebrew.",
     "getting_ams": "Obteniendo Atmosphère",
-    "custom_packs_label": "◆ Aquí están los paquetes {}. Ten en cuenta que no están respaldados por AIO-Switch-Updater así que asegurate de que confías en la fuente.",
+    "custom_packs_label": "◆ Aquí están los paquetes {}. Ten en cuenta que no están respaldados por AIO-Switch-Updater-Reborn así que asegurate de que confías en la fuente.",
     "custom_packs_ams": "◆ Descargas que contienen el firmware personalizdo Atmosphère.",
     "custom_packs_misc": "◆ Descargas que contienen homebrew y herramientas.",
     "custom_download": "Descarga personalizada",

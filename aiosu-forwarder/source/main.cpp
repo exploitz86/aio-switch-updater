@@ -3,13 +3,13 @@
 
 #include <switch.h>
 
-#define PATH        "/switch/aio-switch-updater/"
-#define FULL_PATH   "/switch/aio-switch-updater/aio-switch-updater.nro"
-#define CONFIG_PATH "/config/aio-switch-updater/switch/aio-switch-updater/aio-switch-updater.nro"
-#define PREFIX      "/switch/aio-switch-updater/aio-switch-updater-v"
-#define FORWARDER_PATH      "/config/aio-switch-updater/aiosu-forwarder.nro"
-#define CONFIG_SWITCH       "/config/aio-switch-updater/switch/"
-#define HIDDEN_FILE "/config/aio-switch-updater/.aio-switch-updater"
+#define PATH        "/switch/aio-switch-updater-reborn/"
+#define FULL_PATH   "/switch/aio-switch-updater-reborn/aio-switch-updater-reborn.nro"
+#define CONFIG_PATH "/config/aio-switch-updater-reborn/switch/aio-switch-updater-reborn/aio-switch-updater-reborn.nro"
+#define PREFIX      "/switch/aio-switch-updater-reborn/aio-switch-updater-reborn-v"
+#define FORWARDER_PATH      "/config/aio-switch-updater-reborn/aiosu-forwarder.nro"
+#define CONFIG_SWITCH       "/config/aio-switch-updater-reborn/switch/"
+#define HIDDEN_FILE "/config/aio-switch-updater-reborn/.aio-switch-updater-reborn"
 
 int removeDir(const char* path)
 {

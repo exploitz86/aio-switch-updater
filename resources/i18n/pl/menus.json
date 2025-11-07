@@ -1,9 +1,9 @@
 {
   "about": {
-    "title": "All-in-One Nintendo Switch Updater",
-    "copyright": "AIO-Switch-Updater jest zgodny z licencją GPL-3.0",
+    "title": "All-in-One Nintendo Switch Updater Reborn",
+    "copyright": "AIO-Switch-Updater-Reborn jest zgodny z licencją GPL-3.0",
     "disclaimers": "◆ Oprócz cheatów które są lustrzaną kopią tych z wątku na GBAtemp.net, eXploitz nie hostuje żadnych innych plików. Podziękowania za nie należy kierować do ich twórców.\n◆ Linki są odświeżane co 30 minut. Jeśli po 30 minutach link nadal nie działa, utwórz nowy problem na GitHubie.\n",
-    "donate": "◆ Podoba ci się apka? Rozważ datek na wsparcie oryginalnego autora: 'https://git.io/donate_homlet'"
+    "donate": "◆ Podoba ci się apka? Rozważ datek na wsparcie moich wysiłków: https://ko-fi.com/exploitz'"
   },
   "cheats": {
     "installed": "Zainstalowane cheaty",
@@ -30,7 +30,7 @@
     "kb_error": "Jeśli klawiatura nie pokazała się, spróbuj uruchomić aplikację z pełnym dostępem do pamięci RAM (title override)",
     "cheatslips_see_more": "Zobacz więcej",
     "cheatslips_dl_cheats": "Pobierz cheaty i wróć",
-    "bid_not_found": "Nie można było uzyskać ID kompilacji. Spróbuj uruchomić AIO-Switch-Updater w trybie appletu gdy gra jest uruchomiona.",
+    "bid_not_found": "Nie można było uzyskać ID kompilacji. Spróbuj uruchomić AIO-Switch-Updater-Reborn w trybie appletu gdy gra jest uruchomiona.",
     "exclude_titles": "Wyklucz tytuły",
     "exclude_titles_desc": "W tym menu możesz wyłączyć aktualizacje cheatów",
     "exclude_titles_save": "Zapisz wybór i wróć",
@@ -117,7 +117,7 @@
     "dl_payloads": "Pobierz payloady do ",
     "inject_payloads": "Wstrzyknij payload",
     "update_app": "Zaktualizuj aplikację (v{})",
-    "dl_app": "Pobieranie:\nAIO-Switch-Updater\n\nZ:\n",
+    "dl_app": "Pobieranie:\nAIO-Switch-Updater-Reborn\n\nZ:\n",
     "changelog": "Dziennik zmian",
     "clean_up": "Wyczyść pobrane pliki",
     "hide_tabs": "Ukryj zakładki",

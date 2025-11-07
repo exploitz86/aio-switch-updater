@@ -1,10 +1,10 @@
 {
   "about": {
-    "title": "All-in-One Nintendo Switch Updater",
-    "copyright": "AIO-Switch-Updater is licensed under GPL-3.0",
+    "title": "All-in-One Nintendo Switch Updater Reborn",
+    "copyright": "AIO-Switch-Updater-Reborn is licensed under GPL-3.0",
     "disclaimers_title": "Disclaimers",
     "disclaimers": "\u25c6 Aside from cheat codes that are mirrored from the main GBAtemp thread, eXploitz isn't hosting anything. All credits go to respective owners.\n\u25c6 Links are refreshed every 30 minutes. If a link remains broken after 30 minutes have passed, please open a Github issue.",
-    "donate": "\u25c6 Like the app? Consider donating to support the original author: 'https://git.io/donate_homlet'"
+    "donate": "\u25c6 Like the app? Consider donating to support my efforts: https://ko-fi.com/exploitz'"
   },
   "cheats": {
     "installed": "Installed cheats",
@@ -33,7 +33,7 @@
     "kb_error": "If they keyboard did not show up, try running the app with full RAM access (title override)",
     "cheatslips_see_more": "See more",
     "cheatslips_dl_cheats": "Download cheats and go back",
-    "bid_not_found": "Couldn't obtain build ID. Try launching AIO-Switch-Updater in applet mode while the game is running.",
+    "bid_not_found": "Couldn't obtain build ID. Try launching AIO-Switch-Updater-Reborn in applet mode while the game is running.",
     "exclude_titles": "Exclude titles",
     "exclude_titles_desc": "You can turn off cheat updates with this menu",
     "exclude_titles_save": "Save choice and return",
@@ -43,7 +43,7 @@
     "bid_tid_info": "Those cheats will be added to the end of your existing cheat file.",
     "dl_cheatcodes": "Download cheat code",
     "dl_successful": "Successfully downloaded the following cheat code:\n{}",
-    "applet_mode_not_supported": "Due to memory constraints, in applet mode you may only fetch cheat codes for the game you're currently playing. Please launch AIO-Switch-Updater through title override to download cheat codes for any game you own.",
+    "applet_mode_not_supported": "Due to memory constraints, in applet mode you may only fetch cheat codes for the game you're currently playing. Please launch AIO-Switch-Updater-Reborn through title override to download cheat codes for any game you own.",
     "cheatfile_label": "Here are the cheat codes listed in file {}",
     "not_found": "No proper cheat codes could be found for this game",
     "show_existing": "Show existing",
@@ -75,7 +75,7 @@
     "cancel": "Cancel",
     "off": "Off",
     "selected": "Selected",
-    "applet_mode_not_supported": "This feature isn't available in applet mode. Please launch AIO-Switch-Updater through title override to access it.",
+    "applet_mode_not_supported": "This feature isn't available in applet mode. Please launch AIO-Switch-Updater-Reborn through title override to access it.",
     "nothing_to_see": "Nothing to see here!"
   },
   "changelog": {
@@ -100,7 +100,7 @@
   "pro_con": {
     "title": "Pro controller color swapper",
     "desc": "You can change the internal color of your Pro controller. Make sure it's set to player 1.",
-    "warning": "AIO-Switch-Updater does not currently support changing Pro controller grip color. Use Joy-Con Toolkit on PC instead.",
+    "warning": "AIO-Switch-Updater-Reborn does not currently support changing Pro controller grip color. Use Joy-Con Toolkit on PC instead.",
     "label": "Pro controller color swapper",
     "backing_up": "Backing up the color profile.",
     "all_done": "All done! You may need to turn your controller on and off for the change to take effect.",
@@ -152,7 +152,7 @@
     "inject_payloads": "Inject payload",
     "getting_payload": "Getting payload",
     "update_app": "Update the app (v{})",
-    "dl_app": "Downloading:\nAIO-switch-updater\n\nFrom:\n",
+    "dl_app": "Downloading:\nAIO-Switch-Updater-Reborn\n\nFrom:\n",
     "changelog": "Changelog",
     "clean_up": "Clean up downloaded files",
     "hide_tabs": "Hide tabs",
@@ -172,7 +172,7 @@
     "not_an_archive": "The downloaded file is not a zip archive. This is most likely due to a broken link. If the problem persists after more than 30 minutes, please open an issue on Github.",
     "overwrite_inis": "Do you want to overwrite existing .ini config files?",
     "set_hekate_reboot_payload": "Do you want to copy the Hekate payload `{}` to `{}`?",
-    "applet_webbrowser": "AIO-Switch-Updater is running in applet mode or through a forwarder.\n\uE016 Please relaunch AIO-Switch-Updater through hbmenu: on the Switch's main menu, hold [R] while selecting a game."
+    "applet_webbrowser": "AIO-Switch-Updater-Reborn is running in applet mode or through a forwarder.\n\uE016 Please relaunch AIO-Switch-Updater-Reborn through hbmenu: on the Switch's main menu, hold [R] while selecting a game."
   },
   "ams_update": {
     "reboot_rcm": "The Switch will now reboot to a special payload in order to finalise the install.",
@@ -184,7 +184,7 @@
     "mariko_rev": "\u25c6 Mariko revision",
     "ascent_label": "\u25c6 Ascent by exploitz86 is a CFW pack based on Team Neptune's DeepSea that includes Atmosphère, hekate, and various homebrew apps.",
     "getting_ams": "Getting Atmosphère",
-    "custom_packs_label": "\u25c6 Here are packs listed in the {} file. Be aware that those are not endorsed by AIO-Switch-Updater so make sure you trust their source.",
+    "custom_packs_label": "\u25c6 Here are packs listed in the {} file. Be aware that those are not endorsed by AIO-Switch-Updater-Reborn so make sure you trust their source.",
     "custom_packs_ams": "\u25c6 Downloads containing the Atmosphère custom firmware.",
     "custom_packs_misc": "\u25c6 Downloads containing homebrew and tools.",
     "custom_download": "Custom download",

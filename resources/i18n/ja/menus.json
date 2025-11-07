@@ -1,9 +1,9 @@
 {
   "about": {
-    "title": "All-in-One Nintendo Switch Updater",
-    "copyright": "AIO-Switch-UpdaterはGPL-3.0の下でライセンスされています",
+    "title": "All-in-One Nintendo Switch Updater Reborn",
+    "copyright": "AIO-Switch-Updater-RebornはGPL-3.0の下でライセンスされています",
     "disclaimers": "◆ メインのGBAtemp.netのスレッドからミラーリングされたチートコードを除いて、eXploitzは何もホストしていません。すべてのクレジットはそれぞれの所有者に送られます。\n◆ リンクは3時間ごとに更新されます。 3時間経過してもリンクが壊れたままの場合は、GitHubの問題を開いてください。\n",
-    "donate": "◆ アプリを気に入ってもらえましたか?元の作者に貢献をしたいと思った場合は、寄付をお願いします: 'https://git.io/donate_homlet'"
+    "donate": "◆ アプリを気に入ってもらえましたか？私の活動を支援したいと思った場合は、寄付をお願いします: https://ko-fi.com/exploitz'"
   },
   "cheats": {
     "installed": "インストールされたチートコード",
@@ -31,7 +31,7 @@
     "kb_error": "キーボードが表示されない場合は、フルRAMアクセス(タイトルリダイレクト)でアプリを実行してみてください",
     "cheatslips_see_more": "続きを見る",
     "cheatslips_dl_cheats": "チートをダウンロードして戻る",
-    "bid_not_found": "ビルドIDを取得できませんでした。ゲームの実行中にアプレットモードでAIO-Switch-Updaterを起動してみてください",
+    "bid_not_found": "ビルドIDを取得できませんでした。ゲームの実行中にアプレットモードでAIO-Switch-Updater-Rebornを起動してみてください",
     "exclude_titles": "タイトルを除外する",
     "exclude_titles_desc": "このメニューでチートのアップデートをオフにする事ができます",
     "exclude_titles_save": "選択を保存して戻る",
@@ -39,7 +39,7 @@
     "bid_tid_info": "これらのチートは、既存のチートファイルの最後に追加されます。",
     "dl_cheatcodes": "チートコードをダウンロード",
     "dl_successful": "次のチートコードを正常にダウンロードしました:\n{}",
-    "applet_mode_not_supported": "メモリの制約により、アプレットモードでは、現在プレイしているゲームのチートコードのみをフェッチできます。所有しているゲームのチートコードをダウンロードするには、タイトルリダイレクトを通じてAIO-Switch-Updaterを起動してください。",
+    "applet_mode_not_supported": "メモリの制約により、アプレットモードでは、現在プレイしているゲームのチートコードのみをフェッチできます。所有しているゲームのチートコードをダウンロードするには、タイトルリダイレクトを通じてAIO-Switch-Updater-Rebornを起動してください。",
     "cheatfile_label": "これがファイルにリストされているチートコードです {}",
     "not_found": "このゲームに適切なチートコードが見つかりませんでした",
     "show_existing": "既存の物を表示",
@@ -69,7 +69,7 @@
     "cancel": "キャンセル",
     "off": "無効",
     "selected": "選択済み",
-    "applet_mode_not_supported": "この機能はアプレットモードの状態で使用できません。アクセスするには、タイトルリダイレクトを介してAIO-Switch-Updaterを起動してください。",
+    "applet_mode_not_supported": "この機能はアプレットモードの状態で使用できません。アクセスするには、タイトルリダイレクトを介してAIO-Switch-Updater-Rebornを起動してください。",
     "nothing_to_see": "特に見るべきものはありません!"
   },
   "changelog": {
@@ -144,7 +144,7 @@
     "inject_payloads": "ペイロードを送信",
     "getting_payload": "ペイロードを取得",
     "update_app": "アプリを更新 (v{})",
-    "dl_app": "ダウンロード中:\nAIO-Switch-Updater\n\nから:\n",
+    "dl_app": "ダウンロード中:\nAIO-Switch-Updater-Reborn\n\nから:\n",
     "changelog": "更新履歴",
     "clean_up": "ダウンロードをしたファイルをクリーンアップ",
     "hide_tabs": "タブを非表示",
@@ -175,7 +175,7 @@
     "mariko_rev": "◆ Marikoチップ(対策機)",
     "ascent_label": "◆ exploitz86によるAscentは、Team NeptuneのDeepSeaをベースにしたCFWパックで、Atmosphère、Hekateや様々な自作アプリを含みます。",
     "getting_ams": "Atmosphèreを取得中です",
-    "custom_packs_label": "◆ {} ファイルにリストされているパックは次の通りです。 それらはAIO-Switch-Updaterによって承認されていない事に注意をしてください。そのため、それらのソースを信頼している事を確認してください。"
+    "custom_packs_label": "◆ {} ファイルにリストされているパックは次の通りです。 それらはAIO-Switch-Updater-Rebornによって承認されていない事に注意をしてください。そのため、それらのソースを信頼している事を確認してください。"
   },
   "firmware": {
     "launch_daybreak": "ダウンロードをしたsysupdateをインストールするためにDaybreakを起動しますか?"
