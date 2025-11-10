@@ -70,6 +70,11 @@
     "cancel": "Annulla",
     "off": "Off",
     "selected": "Selezionato",
+    "enabled": "Abilitato",
+    "disabled": "Disabilitato",
+    "unknown": "Sconosciuto",
+    "found": "Trovato",
+    "missing": "Mancante",
     "applet_mode_not_supported": "Questa funzionalità non è disponibile in Modalità Applet. Per poterne usufruire, avvia AIO-Switch-Updater-Reborn come applicazione.",
     "nothing_to_see": "Qui non c'è nulla!"
   },
@@ -188,5 +193,28 @@
     "insufficient_storage": "Non c'è abbastanza spazio disponibile sulla scheda SD.",
     "error_message": "{}\nPer favore riprova più tardi. Se il problema persiste, apri una segnalazione su GitHub.",
     "mariko_payload_missing": "Per aggiornare Atmosphère su modelli di Switch patchati, il payload deve essere rinominato in \"payload.bin\" e deve trovarsi alla radice della tua scheda SD."
+  },
+  "cheat_settings": {
+    "title": "Impostazioni cheat",
+    "current_status": "Stato attuale",
+    "config_ready": "Impostazioni pronte per la configurazione",
+    "auto_enable_cheats": "Attiva automaticamente i cheat per tutti i giochi",
+    "remember_state": "Ricorda gli stati di attivazione dei cheat",
+    "create_config": "Crea file di configurazione",
+    "restart_to_payload": "Riavvia a Payload",
+    "restart_confirm": "Riavviare il sistema per applicare le impostazioni cheat?",
+    "info": "Informazioni",
+    "info_desc": "Configura il comportamento dei cheat di Atmosphere. Le modifiche richiedono un riavvio.",
+    "config_status": "File di configurazione: {}",
+    "auto_enable_updated": "Attivazione automatica cheat è stata {}",
+    "remember_state_updated": "Ricorda stato cheat è stato {}",
+    "update_failed": "Impossibile aggiornare l'impostazione. Controlla i permessi del file o assicurati che la scheda SD sia scrivibile.",
+    "config_created": "File di configurazione creato con successo.",
+    "config_create_failed": "Impossibile creare il file di configurazione. Controlla i permessi del file e assicurati che la scheda SD sia scrivibile.",
+    "permission_error": "Permesso negato. Assicurati che la scheda SD non sia protetta da scrittura.",
+    "file_access_error": "Impossibile accedere al file di configurazione. Controlla se la scheda SD è montata correttamente.",
+    "restart_required": "Affinché le modifiche abbiano effetto è necessario un riavvio del sistema.",
+    "restart": "Riavvia",
+    "back": "Indietro"
   }
 }

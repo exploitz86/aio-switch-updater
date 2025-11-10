@@ -13,6 +13,7 @@
     "getting_cheats": "Sammle Cheats",
     "menu": "Cheats-Menü",
     "view": "Zeige installierte Cheats",
+    "settings": "Cheat-Einstellungen",
     "exclude": "Schließe Spiele von Cheat-Updates aus",
     "delete_existing": "Lösche alle bestehenden Cheats",
     "delete_all": "Lösche alle Cheats",
@@ -49,6 +50,20 @@
     "show_cheat_files": "Alle Cheat-Dateien anzeigen",
     "gbatemp_title": "GBAtemp.net Cheats"
   },
+  "cheat_settings": {
+    "title": "Cheat-Einstellungen",
+    "current_status": "Konfigurationsstatus",
+    "config_ready": "Einstellungen zur Konfiguration bereit",
+    "auto_enable_cheats": "Cheats standardmäßig automatisch aktivieren",
+    "remember_state": "Cheat-Status zwischen Neustarts merken",
+    "create_config": "Standard-Konfigurationsdatei erstellen",
+    "config_created": "Konfigurationsdatei erfolgreich erstellt!",
+    "config_create_failed": "Fehler beim Erstellen der Konfigurationsdatei!",
+    "restart_to_payload": "Neustart zu Payload",
+    "restart_confirm": "System neustarten, um Cheat-Einstellungen anzuwenden?",
+    "info": "Information",
+    "info_desc": "Atmosphere-Cheat-Einstellungen konfigurieren. Änderungen erfordern Neustart."
+  },
   "common": {
     "downloading": "Wird heruntergeladen…",
     "extracting": "Wird entpackt…",
@@ -68,6 +83,11 @@
     "cancel": "Abbrechen",
     "off": "Ausschalten",
     "selected": "Ausgewählt",
+    "enabled": "Aktiviert",
+    "disabled": "Deaktiviert",
+    "unknown": "Unbekannt",
+    "found": "Gefunden",
+    "missing": "Fehlend",
     "applet_mode_not_supported": "Diese Funktion ist im Applet-Modus nicht verfügbar. Bitte starte den AIO-Switch-Updater-Reborn über die Title Override, um darauf zuzugreifen."
   },
   "changelog": {

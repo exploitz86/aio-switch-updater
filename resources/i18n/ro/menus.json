@@ -75,6 +75,11 @@
     "cancel": "Anulează",
     "off": "Oprit",
     "selected": "Selectat",
+    "enabled": "Activat",
+    "disabled": "Dezactivat",
+    "unknown": "Necunoscut",
+    "found": "Găsit",
+    "missing": "Lipsește",
     "applet_mode_not_supported": "Această caracteristică nu este disponibilă în modul applet. Lansați AIO-Switch-Updater-Reborn prin înlocuirea titlului pentru a o accesa.",
     "nothing_to_see": "Nimic de văzut aici!"
   },
@@ -196,6 +201,20 @@
   },
   "net": {
     "title": "Setări Internet"
+  },
+  "cheat_settings": {
+    "title": "Setări Cheat",
+    "current_status": "Stare curentă",
+    "config_ready": "Setările sunt gata pentru configurare",
+    "auto_enable_cheats": "Activează automat cheat-urile pentru toate jocurile",
+    "remember_state": "Ține minte stările de comutare ale cheat-urilor",
+    "create_config": "Creează fișier de configurare",
+    "config_created": "Fișier de configurare creat cu succes.",
+    "config_create_failed": "Eșec în crearea fișierului de configurare.",
+    "restart_to_payload": "Repornește la Payload",
+    "restart_confirm": "Reporniți sistemul pentru a aplica setările cheat-urilor?",
+    "info": "Informații",
+    "info_desc": "Configurează comportamentul cheat-urilor Atmosphere. Modificările necesită o repornire."
   },
   "errors": {
     "insufficient_storage": "Nu este suficient spațiu disponibil pe cardul SD pentru a efectua această operațiune.",

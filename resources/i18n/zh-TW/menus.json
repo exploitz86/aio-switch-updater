@@ -75,6 +75,11 @@
     "cancel": "取消",
     "off": "關",
     "selected": "已選擇",
+    "enabled": "已啟用",
+    "disabled": "已停用",
+    "unknown": "未知",
+    "found": "已找到",
+    "missing": "遺失",
     "applet_mode_not_supported": "此功能在applet模式內無法使用。請重新執行AIO-Switch-Updater-Reborn並透過title重新導向來進行存取",
     "nothing_to_see": "沒有符合的項目!"
   },
@@ -196,6 +201,20 @@
   },
   "net": {
     "title": "網路設定"
+  },
+  "cheat_settings": {
+    "title": "金手指設定",
+    "current_status": "目前狀態",
+    "config_ready": "設定已準備好進行配置",
+    "auto_enable_cheats": "為所有遊戲自動啟用金手指",
+    "remember_state": "記住金手指切換狀態",
+    "create_config": "建立配置檔案",
+    "config_created": "配置檔案建立成功。",
+    "config_create_failed": "建立配置檔案失敗。",
+    "restart_to_payload": "重新啟動到 Payload",
+    "restart_confirm": "重新啟動系統以套用金手指設定？",
+    "info": "資訊",
+    "info_desc": "配置 Atmosphere 金手指行為。變更需要重新啟動。"
   },
   "errors": {
     "insufficient_storage": "記憶卡沒有足夠的可用空間來執行此操作",

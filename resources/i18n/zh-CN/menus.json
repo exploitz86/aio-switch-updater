@@ -75,6 +75,11 @@
     "cancel": "取消",
     "off": "关闭",
     "selected": "已选择",
+    "enabled": "已启用",
+    "disabled": "已禁用",
+    "unknown": "未知",
+    "found": "已找到",
+    "missing": "缺失",
     "applet_mode_not_supported": "此功能在 applet 模式下不可用。请通过游戏重定向启动 AIO-Switch-Updater-Reborn 以访问它。",
     "nothing_to_see": "这里没什么可看的！"
   },
@@ -196,6 +201,20 @@
   },
   "net": {
     "title": "网络设置"
+  },
+  "cheat_settings": {
+    "title": "金手指设置",
+    "current_status": "当前状态",
+    "config_ready": "设置已准备好配置",
+    "auto_enable_cheats": "为所有游戏自动启用金手指",
+    "remember_state": "记住金手指切换状态",
+    "create_config": "创建配置文件",
+    "config_created": "配置文件创建成功。",
+    "config_create_failed": "创建配置文件失败。",
+    "restart_to_payload": "重启到 Payload",
+    "restart_confirm": "重启系统以应用金手指设置？",
+    "info": "信息",
+    "info_desc": "配置 Atmosphere 金手指行为。更改需要重启。"
   },
   "errors": {
     "insufficient_storage": "您的 SD 卡上没有足够的可用空间来执行此操作。",

@@ -13,6 +13,7 @@
     "getting_cheats": "チートコードの取得",
     "menu": "チートコードメニュー",
     "view": "インストールされたチートコードを確認",
+    "settings": "チート設定",
     "exclude": "チートコードのアップデートの受信からゲームを除外",
     "delete_existing": "既存のチートコードをすべて削除",
     "delete_orphaned": "独立したチートコードを削除",
@@ -69,6 +70,11 @@
     "cancel": "キャンセル",
     "off": "無効",
     "selected": "選択済み",
+    "enabled": "有効",
+    "disabled": "無効",
+    "unknown": "不明",
+    "found": "見つかりました",
+    "missing": "見つかりません",
     "applet_mode_not_supported": "この機能はアプレットモードの状態で使用できません。アクセスするには、タイトルリダイレクトを介してAIO-Switch-Updater-Rebornを起動してください。",
     "nothing_to_see": "特に見るべきものはありません!"
   },
@@ -187,5 +193,28 @@
     "insufficient_storage": "この操作を実行するために必要なSDカードの空き容量がありません。",
     "error_message": "{}\nしばらくしてからもう一度お試しください。問題が解決しない場合は、GitHubで問題を開きます",
     "mariko_payload_missing": "対策機の本体でAtmosphèreを更新するには、ペイロードに \"payload.bin\" というファイル名を付けて、SDカードの直下に配置をする必要があります。"
+  },
+  "cheat_settings": {
+    "title": "チート設定",
+    "current_status": "現在の状態",
+    "config_ready": "設定の構成が準備完了",
+    "auto_enable_cheats": "すべてのゲームでチートを自動有効化",
+    "remember_state": "チートの切り替え状態を記憶",
+    "create_config": "設定ファイルを作成",
+    "restart_to_payload": "ペイロードに再起動",
+    "restart_confirm": "チート設定を適用するためにシステムを再起動しますか？",
+    "info": "情報",
+    "info_desc": "Atmosphereのチート動作を設定します。変更には再起動が必要です。",
+    "config_status": "設定ファイル: {}",
+    "auto_enable_updated": "チートの自動有効化が{}されました",
+    "remember_state_updated": "チート状態の記憶が{}されました",
+    "update_failed": "設定の更新に失敗しました。ファイルの権限を確認するか、SDカードが書き込み可能であることを確認してください。",
+    "config_created": "設定ファイルが正常に作成されました。",
+    "config_create_failed": "設定ファイルの作成に失敗しました。ファイルの権限を確認し、SDカードが書き込み可能であることを確認してください。",
+    "permission_error": "アクセスが拒否されました。SDカードが書き込み保護されていないことを確認してください。",
+    "file_access_error": "設定ファイルにアクセスできません。SDカードが正しくマウントされているか確認してください。",
+    "restart_required": "変更を有効にするには、システムの再起動が必要です。",
+    "restart": "再起動",
+    "back": "戻る"
   }
 }

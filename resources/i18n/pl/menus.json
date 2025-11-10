@@ -52,7 +52,12 @@
     "yes": "Tak",
     "go_back": "Wróć",
     "confirm": "Zatwierdź",
-    "cancel": "Anuluj"
+    "cancel": "Anuluj",
+    "enabled": "Włączone",
+    "disabled": "Wyłączone",
+    "unknown": "Nieznane",
+    "found": "Znalezione",
+    "missing": "Brakujące"
   },
   "changelog": {
     "changelog": "Dziennik zmian"
@@ -142,5 +147,28 @@
   },
   "net": {
     "title": "Ustawienia internetowe"
+  },
+  "cheat_settings": {
+    "title": "Ustawienia cheatów",
+    "current_status": "Bieżący status",
+    "config_ready": "Ustawienia gotowe do konfiguracji",
+    "auto_enable_cheats": "Automatycznie włącz cheaty dla wszystkich gier",
+    "remember_state": "Zapamiętaj stan przełączników cheatów",
+    "create_config": "Utwórz plik konfiguracyjny",
+    "restart_to_payload": "Uruchom ponownie do Payload",
+    "restart_confirm": "Uruchomić ponownie system, aby zastosować ustawienia cheatów?",
+    "info": "Informacje",
+    "info_desc": "Skonfiguruj zachowanie cheatów Atmosphere. Zmiany wymagają ponownego uruchomienia.",
+    "config_status": "Plik konfiguracyjny: {}",
+    "auto_enable_updated": "Automatyczne włączanie cheatów zostało {}",
+    "remember_state_updated": "Zapamiętywanie stanu cheatów zostało {}",
+    "update_failed": "Nie udało się zaktualizować ustawienia. Sprawdź uprawnienia pliku lub upewnij się, że karta SD jest zapisywalna.",
+    "config_created": "Plik konfiguracyjny został pomyślnie utworzony.",
+    "config_create_failed": "Nie udało się utworzyć pliku konfiguracyjnego. Sprawdź uprawnienia pliku i upewnij się, że karta SD jest zapisywalna.",
+    "permission_error": "Odmowa dostępu. Upewnij się, że karta SD nie jest zabezpieczona przed zapisem.",
+    "file_access_error": "Nie można uzyskać dostępu do pliku konfiguracyjnego. Sprawdź, czy karta SD jest prawidłowo zamontowana.",
+    "restart_required": "Aby zmiany zostały zastosowane, wymagany jest restart systemu.",
+    "restart": "Restart",
+    "back": "Wstecz"
   }
 }

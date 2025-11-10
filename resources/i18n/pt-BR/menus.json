@@ -74,6 +74,11 @@
     "cancel": "Cancelar",
     "off": "Desligado",
     "selected": "Selecionado",
+    "enabled": "Habilitado",
+    "disabled": "Desabilitado",
+    "unknown": "Desconhecido",
+    "found": "Encontrado",
+    "missing": "Ausente",
     "applet_mode_not_supported": "Este recurso não está disponível no modo applet. Por favor, inicie o AIO-Switch-Updater-Reborn através de substituição de título para acessá-lo.",
     "nothing_to_see": "Nada para ver aqui!"
   },
@@ -200,5 +205,28 @@
     "insufficient_storage": "Não há espaço suficiente disponível no seu cartão SD para realizar esta operação.",
     "error_message": "{}\nPor favor, tente novamente em breve. Se o problema persistir, abra uma issue no GitHub.",
     "mariko_payload_missing": "Para atualizar o Atmosphère em Switches modificados, o seu payload precisa ter o nome de \"payload.bin\" e deve estar na raiz do seu cartão SD."
+  },
+  "cheat_settings": {
+    "title": "Configurações de trapaças",
+    "current_status": "Status atual",
+    "config_ready": "Configurações prontas para configuração",
+    "auto_enable_cheats": "Ativar automaticamente trapaças para todos os jogos",
+    "remember_state": "Lembrar estados de alternância de trapaças",
+    "create_config": "Criar arquivo de configuração",
+    "restart_to_payload": "Reiniciar para Payload",
+    "restart_confirm": "Reiniciar sistema para aplicar configurações de trapaças?",
+    "info": "Informação",
+    "info_desc": "Configurar comportamento de trapaças do Atmosphere. Mudanças requerem uma reinicialização.",
+    "config_status": "Arquivo de configuração: {}",
+    "auto_enable_updated": "Ativação automática de trapaças foi {}",
+    "remember_state_updated": "Lembrar estado de trapaças foi {}",
+    "update_failed": "Falha ao atualizar configuração. Verifique permissões de arquivo ou certifique-se de que o cartão SD está gravável.",
+    "config_created": "Arquivo de configuração criado com sucesso.",
+    "config_create_failed": "Falha ao criar arquivo de configuração. Verifique permissões de arquivo e certifique-se de que o cartão SD está gravável.",
+    "permission_error": "Permissão negada. Certifique-se de que o cartão SD não está protegido contra gravação.",
+    "file_access_error": "Não é possível acessar arquivo de configuração. Verifique se o cartão SD está montado corretamente.",
+    "restart_required": "Para que as mudanças tenham efeito é necessário uma reinicialização do sistema.",
+    "restart": "Reiniciar",
+    "back": "Voltar"
   }
 }
