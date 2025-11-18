@@ -44,6 +44,11 @@ jobs:
         echo "Installed devkitPro packages:"
         dkp-pacman -Q | grep -E "(switch|libnx)" || echo "Package query failed, but tools should be available"
 
+    - name: Update devkitPro toolchain and libnx
+      run: |
+        sudo dkp-pacman -Sy
+        sudo dkp-pacman -Syu --noconfirm devkitA64 libnx
+
     - name: Extract version from tag or Makefile
       id: version
       shell: bash
