@@ -46,8 +46,9 @@ jobs:
 
     - name: Update devkitPro toolchain and libnx
       run: |
-        sudo dkp-pacman -Sy
-        sudo dkp-pacman -Syu --noconfirm devkitA64 libnx
+        # Use the container's built-in packages, skip repo sync to avoid 403 errors
+        # The devkitpro/devkita64 container already has necessary tools
+        echo "Using pre-installed devkitPro packages from container"
 
     - name: Extract version from tag or Makefile
       id: version
