@@ -1,6 +1,7 @@
 #include "ams_tab.hpp"
 
 #include <filesystem>
+#include <fstream>
 #include <iostream>
 #include <string>
 
@@ -107,9 +108,36 @@ void AmsTab_Regular::CreateLists()
     this->addView(new brls::Label(brls::LabelStyle::DESCRIPTION, "menus/main/ams_text"_i18n + (CurrentCfw::running_cfw == CFW::ams ? "\n" + "menus/ams_update/current_ams"_i18n + CurrentCfw::getAmsInfo() : "") + (erista ? "\n" + "menus/ams_update/erista_rev"_i18n : "\n" + "menus/ams_update/mariko_rev"_i18n), true));
     CreateDownloadItems(util::getValueFromKey(cfws, "Atmosphere"));
 
+    // Display current Ascent version from /atmosphere/ASCENT
+    std::string ascentVersion = "menus/ams_update/ascent_not_installed"_i18n;
+    std::ifstream versionFile("/atmosphere/ASCENT");
+    if (versionFile.is_open()) {
+        std::getline(versionFile, ascentVersion);
+        versionFile.close();
+    }
+
+    // Fetch latest supported HOS from Ascent GitHub releases
+    std::string latestHOS = "Unknown";
+    nlohmann::ordered_json ascentRelease;
+    if (download::getRequest("https://api.github.com/repos/exploitz86/Ascent/releases/latest", ascentRelease, {"accept: application/vnd.github.v3+json"})) {
+        if (ascentRelease.contains("body")) {
+            std::string body = ascentRelease["body"];
+            size_t hosPos = body.find("Latest supported HOS:");
+            if (hosPos != std::string::npos) {
+                size_t start = hosPos + 22; // Skip "Latest supported HOS: "
+                size_t end = body.find_first_of("\r\n", start);
+                if (end == std::string::npos) end = body.length();
+                latestHOS = body.substr(start, end - start);
+                // Trim whitespace
+                latestHOS.erase(0, latestHOS.find_first_not_of(" \t"));
+                latestHOS.erase(latestHOS.find_last_not_of(" \t") + 1);
+            }
+        }
+    }
+
     this->addView(new brls::Label(
         brls::LabelStyle::DESCRIPTION,
-        "menus/ams_update/ascent_label"_i18n,
+        "menus/ams_update/ascent_label"_i18n + "\n" + "menus/ams_update/ascent_version"_i18n + " " + ascentVersion + "\n" + "menus/ams_update/ascent_supported_hos"_i18n + " " + latestHOS,
         true));
     CreateDownloadItems(util::getValueFromKey(cfws, "Ascent"), false);
 }

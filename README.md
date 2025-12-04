@@ -1,5 +1,4 @@
 # AIO-Switch-Updater-Reborn
-![hbappstore](https://img.shields.io/endpoint?url=https%3A%2F%2Frunkit.io%2Fhomlet%2Fhbappstore-shieldsio%2Fbranches%2Fmaster%3Furl%3Dhttps%3A%2F%2Fswitchbru.com%2Fappstore%2Frepo.json%26name%3Daio-switch-updater-reborn)
 ![releases](https://img.shields.io/github/downloads/exploitz86/aio-switch-updater-reborn/total)
 [![Build AIO-switch-updater-reborn](https://github.com/exploitz86/aio-switch-updater-reborn/actions/workflows/main.yml/badge.svg)](https://github.com/exploitz86/aio-switch-updater-reborn/actions/workflows/main.yml)
 ![tag](https://img.shields.io/github/v/release/exploitz86/aio-switch-updater-reborn)

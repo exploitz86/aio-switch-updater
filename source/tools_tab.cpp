@@ -141,9 +141,7 @@ ToolsTab::ToolsTab(const std::string& tag, const nlohmann::ordered_json& payload
             std::make_pair("English (Great Britain) ({})", "en-GB"),
             std::make_pair("Français (Canada) ({})", "fr-CA"),
             std::make_pair("Español (Latinoamérica) ({})", "es-419"),
-            std::make_pair("Português brasileiro ({})", "pt-BR"),
-            std::make_pair("Traditional Chinese ({})", "zh-Hant"),
-            std::make_pair("Simplified Chinese ({})", "zh-Hans")};
+            std::make_pair("Português brasileiro ({})", "pt-BR")};
         brls::AppletFrame* appView = new brls::AppletFrame(true, true);
         brls::List* list = new brls::List();
         brls::ListItem* listItem;

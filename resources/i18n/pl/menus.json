@@ -143,7 +143,12 @@
     "install_hekate": "Czy chcesz również pobrać Hekate?\nJeżeli nie, Switch uruchomi się teraz ponownie do specjalnego payloadu aby ukończyć instalację.",
     "delete_contents": "Czy chcesz usunąć istniejącą zawartość ścieżki '/atmosphere/contents/'? Zapobiegnie to błędom jeśli posiadasz sysmoduły niekompatybilne z nowym Atmosphère. Pamiętaj, że spowoduje to usunięcie wszystkich twoich sysmodułów, modów i cheatów.",
     "delete_sysmodules_flags": "Czy chcesz usunąć flagi uruchamiania dodatkowych sysmodułów? Spowoduje to wyłączenie wszystkich twoich sysmodułów i zapobiegnie błędom jeśli posiadasz sysmoduły niekompatybilne z nowym Atmosphère.",
-    "current_ams": "◆ Bieżące Atmosphère: "
+    "current_ams": "◆ Bieżące Atmosphère: ",
+    "ascent_label": "◆ Ascent od exploitz86 to paczka CFW oparta na DeepSea od Team Neptune, zawierająca Atmosphère, hekate i różne aplikacje homebrew.",
+    "ascent_version": "◆ Aktualna wersja Ascent:",
+    "ascent_not_installed": "Nie zainstalowano",
+    "ascent_supported_hos": "◆ Najnowszy obsługiwany HOS:",
+    "getting_ams": "Pobieranie Atmosphère"
   },
   "net": {
     "title": "Ustawienia internetowe"

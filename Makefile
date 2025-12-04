@@ -22,7 +22,7 @@ DATA		:=	data
 INCLUDES	:=	include /lib/borealis/library/include/borealis/extern/nlohmann
 APP_TITLE	:=	All-in-One Switch Updater Reborn
 APP_AUTHOR	:=	HamletDuFromage, eXploitz
-APP_VERSION :=	1.03.1
+APP_VERSION :=	1.04.0
 TARGET		:=	aio-switch-updater-reborn
 
 ROMFS				:=	resources

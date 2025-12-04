@@ -180,6 +180,9 @@
     "erista_rev": "◆ Eristaチップ(未対策機)",
     "mariko_rev": "◆ Marikoチップ(対策機)",
     "ascent_label": "◆ exploitz86によるAscentは、Team NeptuneのDeepSeaをベースにしたCFWパックで、Atmosphère、Hekateや様々な自作アプリを含みます。",
+    "ascent_version": "◆ 現在のAscentバージョン:",
+    "ascent_not_installed": "インストールされていません",
+    "ascent_supported_hos": "◆ 最新対応HOS:",
     "getting_ams": "Atmosphèreを取得中です",
     "custom_packs_label": "◆ {} ファイルにリストされているパックは次の通りです。 それらはAIO-Switch-Updater-Rebornによって承認されていない事に注意をしてください。そのため、それらのソースを信頼している事を確認してください。"
   },

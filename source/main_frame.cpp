@@ -5,11 +5,13 @@
 
 #include "about_tab.hpp"
 #include "ams_tab.hpp"
+#include "confirm_page.hpp"
 #include "download.hpp"
 #include "fs.hpp"
 #include "list_download_tab.hpp"
 #include "tools_tab.hpp"
 #include "utils.hpp"
+#include "worker_page.hpp"
 
 namespace i18n = brls::i18n;
 using namespace i18n::literals;
@@ -55,8 +57,10 @@ MainFrame::MainFrame() : TabFrame()
     if (!util::getBoolValue(hideStatus, "custom"))
         this->addTab("menus/main/custom_downloads"_i18n, new AmsTab_Custom(nxlinks, erista));
 
-    if (!util::getBoolValue(hideStatus, "tools"))
-        this->addTab("menus/main/tools"_i18n, new ToolsTab(tag, util::getValueFromKey(nxlinks, "payloads"), erista, hideStatus));
+    if (!util::getBoolValue(hideStatus, "tools")) {
+        toolsTab = new ToolsTab(tag, util::getValueFromKey(nxlinks, "payloads"), erista, hideStatus);
+        this->addTab("menus/main/tools"_i18n, toolsTab);
+    }
 
     this->registerAction("", brls::Key::B, [this] { return true; });
 }

@@ -9,6 +9,10 @@
 #include "fs.hpp"
 #include "main_frame.hpp"
 #include "warning_page.hpp"
+#include "utils.hpp"
+#include "download.hpp"
+#include "worker_page.hpp"
+#include "confirm_page.hpp"
 
 namespace i18n = brls::i18n;
 using namespace i18n::literals;
@@ -55,11 +59,39 @@ int main(int argc, char* argv[])
     brls::Logger::setLogLevel(brls::LogLevel::DEBUG);
     brls::Logger::debug("Start");
 
-    if (std::filesystem::exists(HIDDEN_AIO_FILE)) {
-        brls::Application::pushView(new MainFrame());
-    }
-    else {
-        brls::Application::pushView(new WarningPage("menus/main/launch_warning"_i18n));
+    // Check for app update and present a blocking flow before main UI
+    {
+        std::string latestTag = util::getLatestTag(TAGS_INFO);
+        const char* currentVersion = APP_VERSION;
+        bool hasUpdate = !latestTag.empty() && latestTag != currentVersion;
+
+        if (hasUpdate) {
+            // Blocking staged flow: automatically start update before main UI
+            brls::StagedAppletFrame* stagedFrame = new brls::StagedAppletFrame();
+            stagedFrame->setTitle("menus/common/updating"_i18n);
+
+            // Download new version
+            stagedFrame->addStage(new WorkerPage(stagedFrame, "menus/common/downloading"_i18n, []() {
+                util::downloadArchive(APP_URL, contentType::app);
+            }));
+
+            // Extract update
+            stagedFrame->addStage(new WorkerPage(stagedFrame, "menus/common/extracting"_i18n, []() {
+                util::extractArchive(contentType::app);
+            }));
+
+            // Final stage: show completion + instruction to relaunch
+            stagedFrame->addStage(new ConfirmPage_AppUpdate(stagedFrame, "menus/common/all_done"_i18n));
+
+            brls::Application::pushView(stagedFrame);
+        } else {
+            // No update: proceed to normal UI
+            if (std::filesystem::exists(HIDDEN_AIO_FILE)) {
+                brls::Application::pushView(new MainFrame());
+            } else {
+                brls::Application::pushView(new WarningPage("menus/main/launch_warning"_i18n));
+            }
+        }
     }
 
     while (brls::Application::mainLoop())

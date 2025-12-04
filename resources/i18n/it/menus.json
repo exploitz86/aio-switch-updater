@@ -180,6 +180,9 @@
     "erista_rev": "◆ Revisione Erista",
     "mariko_rev": "◆ Revisione Mariko",
     "ascent_label": "◆ Ascent di exploitz86 è un pacchetto CFW basato su DeepSea di Team Neptune che include Atmosphère, Hekate e varie applicazioni homebrew.",
+    "ascent_version": "◆ Versione Ascent corrente:",
+    "ascent_not_installed": "Non installato",
+    "ascent_supported_hos": "◆ Ultima HOS supportata:",
     "getting_ams": "Ottenendo Atmosphère",
     "custom_packs_label": "◆ Questi pacchetti sono elencati nel file {}. Questi pacchetti non sono promossi da AIO-Switch-Updater-Reborn, perciò assicurati che provengano da fonti fidate."
   },
