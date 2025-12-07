@@ -12,6 +12,8 @@
 
 A Nintendo Switch homebrew app to download and update CFWs, FWs and cheat codes. Supports Atmosphère, ReiNX and SXOS.
 
+Please note that this is a fork of the awesome AIO Switch Updater by HamletDuFromage. It was initially created for personal use because his cheats repository was broken. All the repositories used by this app have also been forked to make sure everything works as intended. I have many ideas for future updates, so if you are interested, feel free to use this and perhaps consider donating a small amount to help keep the server running, which is necessary for the cheat database to update itself. Also, please consider donating to HamletDuFromage!
+
 Works on **unpatched** (Erista) and **patched** (v2/Mariko) Switches.
 
 ## How to install
