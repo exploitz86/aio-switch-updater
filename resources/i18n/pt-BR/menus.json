@@ -168,7 +168,10 @@
     "language": "Alterar o idioma do aplicativo",
     "outdated_titles": "Atualizações ausentes",
     "latest_version_not_found": "Não foi possível encontrar informações de atualizações",
-    "outdated_titles_desc": "Os seguintes títulos têm atualizações disponíveis:"
+    "outdated_titles_desc": "Os seguintes títulos têm atualizações disponíveis:",
+    "missing_dlc": "DLC(s) ausente(s)",
+    "update_available": "Atualização de versão disponível",
+    "details": "Detalhes"
   },
   "utils": {
     "fw_warning": "Devido ao tamanho dos arquivos de firmware, o download de firmwares no modo applet não é suportado. Por favor, inicie o aplicativo com acesso total à RAM.",

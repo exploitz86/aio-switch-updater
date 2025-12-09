@@ -162,7 +162,10 @@
     "language": "アプリの言語を変更",
     "outdated_titles": "消えたアップデート",
     "latest_version_not_found": "更新情報を見つけられませんでした",
-    "outdated_titles_desc": "以下のタイトルでアップデートが可能です:"
+    "outdated_titles_desc": "以下のタイトルでアップデートが可能です:",
+    "missing_dlc": "欠落しているDLC(s)",
+    "update_available": "バージョン更新利用可能",
+    "details": "詳細"
   },
   "utils": {
     "fw_warning": "FWアーカイブの容量が大きいため、アプレットモードでのファームウェアのダウンロードはサポートされていません。フルRAMアクセスでアプリを起動してください。",

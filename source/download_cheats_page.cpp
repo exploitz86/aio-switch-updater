@@ -27,6 +27,14 @@ namespace cheats_util {
         return res;
     }
 
+    bool IsDlcInstalled(uint64_t dlc_title_id)
+    {
+        NsApplicationContentMetaStatus meta;
+        s32 out = 0;
+        Result rc = nsListApplicationContentMetaStatus(dlc_title_id, 0, &meta, 1, &out);
+        return R_SUCCEEDED(rc) && out > 0 && meta.meta_type == NcmContentMetaType_AddOnContent;
+    }
+
     void ShowCheatSheet(u64 tid, const std::string& bid, const std::string& name)
     {
         std::string path = fmt::format("{}{}/cheats/{}.txt", util::getContentsPath(), util::formatApplicationId(tid), bid);

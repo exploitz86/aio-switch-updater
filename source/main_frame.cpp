@@ -25,12 +25,18 @@ namespace {
 MainFrame::MainFrame() : TabFrame()
 {
     this->setIcon("romfs:/gui_icon.png");
-    this->setTitle(AppTitle);
+    
+    // Set title with applet mode indicator if applicable
+    std::string title = AppTitle;
+    if (util::isApplet()) {
+        title += " \u2022Applet mode\u2022";
+    }
+    this->setTitle(title);
 
     s64 freeStorage;
     std::string tag = util::getLatestTag(TAGS_INFO);
     this->setFooterText(fmt::format("menus/main/footer_text"_i18n,
-                                    (!tag.empty() && tag != AppVersion) ? AppVersion + "menus/main/new_update"_i18n : AppVersion,
+                                    AppVersion,
                                     R_SUCCEEDED(fs::getFreeStorageSD(freeStorage)) ? (float)freeStorage / 0x40000000 : -1));
 
     json hideStatus = fs::parseJsonFile(HIDE_TABS_JSON);

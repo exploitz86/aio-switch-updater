@@ -181,7 +181,10 @@
     "language": "Change app language",
     "outdated_titles": "Missing updates",
     "latest_version_not_found": "Couldn't find updates info",
-    "outdated_titles_desc": "Updates are available for the following titles:"
+    "outdated_titles_desc": "Updates are available for the following titles:",
+    "missing_dlc": "Missing DLC(s)",
+    "update_available": "Version Update Available",
+    "details": "Details"
   },
   "utils": {
     "fw_warning": "Because of the size of FW archives, downloading firmwares in Applet Mode is not supported. Please launch the app with full RAM access.",

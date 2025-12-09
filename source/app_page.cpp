@@ -364,14 +364,94 @@ void AppPage_OutdatedTitles::AddListItem(const std::string& name, u64 tid)
     u32 version = cheats_util::GetVersion(tid);
     std::string tid_string = util::formatApplicationId(tid);
     if (versions.find(tid_string) != versions.end()) {
+        bool has_update = false;
+        bool has_missing_dlc = false;
+        std::string info_text = tid_string;
+        
+        // Check for version update
         u32 latest = versions.at(tid_string).at("latest");
+        std::string latest_build_id = "";
         if (version < latest) {
-            listItem->setSubLabel(fmt::format("{}\t|\t v{} (local) → v{} (latest)", tid_string, version, latest));
+            has_update = true;
+            // Get the build ID for the latest version
+            std::string latest_ver_str = std::to_string(latest);
+            if (versions.at(tid_string).contains(latest_ver_str)) {
+                latest_build_id = versions.at(tid_string).at(latest_ver_str).get<std::string>();
+            }
+            info_text += fmt::format("\t|\t v{} (local) → v{} (latest)", version, latest);
+        }
+        
+        // Check for missing DLCs
+        int missing_dlc_count = 0;
+        std::vector<std::pair<std::string, std::string>> missing_dlc_info;  // pair of (name, id)
+        
+        if (versions.at(tid_string).contains("dlc") && versions.at(tid_string).at("dlc").is_array()) {
+            for (const auto& dlc : versions.at(tid_string).at("dlc")) {
+                if (dlc.contains("id")) {
+                    std::string dlc_id = dlc.at("id").get<std::string>();
+                    uint64_t dlc_tid = std::stoull(dlc_id, nullptr, 16);
+                    if (!cheats_util::IsDlcInstalled(dlc_tid)) {
+                        missing_dlc_count++;
+                        std::string dlc_name = "Unknown DLC";
+                        if (dlc.contains("name")) {
+                            dlc_name = dlc.at("name").get<std::string>();
+                        }
+                        missing_dlc_info.push_back({dlc_name, dlc_id});
+                    }
+                }
+            }
+        }
+        
+        if (missing_dlc_count > 0) {
+            has_missing_dlc = true;
+            if (has_update) {
+                info_text += fmt::format(" + {} DLC", missing_dlc_count);
+            } else {
+                info_text += fmt::format("\t|\t {} ({})", "menus/tools/missing_dlc"_i18n, missing_dlc_count);
+            }
+        }
+        
+        // Only show if there's an update or missing DLC
+        if (has_update || has_missing_dlc) {
+            listItem->setSubLabel(info_text);
+            
+            // Add click handler to show details
+            listItem->getClickEvent()->subscribe([name, tid_string, version, latest, has_update, latest_build_id, missing_dlc_info](brls::View* view) {
+                brls::AppletFrame* appView = new brls::AppletFrame(true, true);
+                brls::List* detailsList = new brls::List();
+                
+                // Add game name header
+                brls::Label* titleLabel = new brls::Label(brls::LabelStyle::DESCRIPTION, name, true);
+                detailsList->addView(titleLabel);
+                
+                // Add version info if outdated
+                if (has_update) {
+                    brls::ListItem* versionItem = new brls::ListItem("menus/tools/update_available"_i18n);
+                    versionItem->setValue(fmt::format("v{} → v{} ({})", version, latest, latest_build_id));
+                    detailsList->addView(versionItem);
+                }
+                
+                // Add missing DLCs
+                if (!missing_dlc_info.empty()) {
+                    brls::Label* dlcHeader = new brls::Label(
+                        brls::LabelStyle::DESCRIPTION, 
+                        fmt::format("{} ({})", "menus/tools/missing_dlc"_i18n, missing_dlc_info.size()), 
+                        true
+                    );
+                    detailsList->addView(dlcHeader);
+                    
+                    for (const auto& dlc : missing_dlc_info) {
+                        brls::ListItem* dlcItem = new brls::ListItem(dlc.first);
+                        dlcItem->setValue(dlc.second);
+                        detailsList->addView(dlcItem);
+                    }
+                }
+                
+                appView->setContentView(detailsList);
+                brls::PopupFrame::open("menus/tools/details"_i18n, appView, "", "");
+            });
+            
             list->addView(listItem);
         }
     }
-    /* else {
-        listItem->setSubLabel(fmt::format("{}\t|\t {}", tid_string, "menus/tools/latest_version_not_found"_i18n));
-        list->addView(listItem);
-    } */
 }

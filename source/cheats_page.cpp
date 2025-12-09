@@ -26,7 +26,7 @@ CheatsPage::CheatsPage() : AppletFrame(true, true)
 
     item = new brls::ListItem("menus/cheats/settings"_i18n);
     item->getClickEvent()->subscribe([](brls::View* view) {
-        brls::Application::pushView(new CheatSettingsPage());
+        brls::PopupFrame::open("menus/cheat_settings/title"_i18n, new CheatSettingsPage(), "", "");
     });
     list->addView(item);
 

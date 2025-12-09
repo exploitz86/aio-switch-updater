@@ -174,7 +174,10 @@
     "language": "Sprache der Anwendung ändern",
     "outdated_titles": "Fehlende Aktualisierungen für Spiele",
     "latest_version_not_found": "Konnte keine Aktualisierungsinformationen finden",
-    "outdated_titles_desc": "Die folgende Spiele haben verfügbare Aktualisierungen:"
+    "outdated_titles_desc": "Die folgende Spiele haben verfügbare Aktualisierungen:",
+    "missing_dlc": "Fehlende DLC(s)",
+    "update_available": "Version Update verfügbar",
+    "details": "Details"
   },
   "utils": {
     "fw_warning": "Wegen der Größe der Firmwarearchive werden Downloads im Applet Mode nicht unterstützt. Bitte öffne die App mit vollem RAM Zugriff (Title Override).",

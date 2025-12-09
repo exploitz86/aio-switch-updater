@@ -168,8 +168,11 @@
     "batch_copy_config_not_found": "Acest instrument vă permite să copiați automat fișiere în anumite locații. Acest lucru poate fi util în funcție de bootloader/trinket. Luați copy_files.txt de la 'https://git.io/aiosu_copyfiles', editați-l și adăugați-l în folderul de configurare. Acest lucru va fi efectuat și după actualizări.",
     "language": "Schimbați limba aplicației",
     "outdated_titles": "Actualizări ce lipsesc",
-    "latest_version_not_found": "Nu s-au putut găsi informații despre actualizări",
-    "outdated_titles_desc": "Următoarele titluri au actualizări disponibile:"
+    "latest_version_not_found": "Nu s-au putut găsi informaţii despre actualizări",
+    "outdated_titles_desc": "Următoarele titluri au actualizări disponibile:",
+    "missing_dlc": "DLC(uri) lipsă",
+    "update_available": "Actualizare versiune disponibilă",
+    "details": "Detalii"
   },
   "utils": {
     "fw_warning": "Din cauza dimensiunii arhivelor FW, descărcarea firmware-urilor în modul Applet nu este acceptată. Lansați aplicația cu acces complet la RAM.",

@@ -170,7 +170,10 @@
     "language": "Changer la langue de l'application",
     "outdated_titles": "Mises à jour manquantes",
     "latest_version_not_found": "Impossible de trouver les informations de mise à jour",
-    "outdated_titles_desc": "Des mises à jour sont disponibles pour les titres suivants :"
+    "outdated_titles_desc": "Des mises à jour sont disponibles pour les titres suivants :",
+    "missing_dlc": "DLC(s) manquant(s)",
+    "update_available": "Mise à jour de version disponible",
+    "details": "Détails"
   },
   "utils": {
     "fw_warning": "En raison de la taille des archives FW, le téléchargement de firmwares en mode applet n'est pas pris en charge. Veuillez lancer l'application avec un accès complet à la RAM.",

@@ -169,7 +169,10 @@
     "language": "更改程序语言",
     "outdated_titles": "检查游戏更新",
     "latest_version_not_found": "找不到更新信息",
-    "outdated_titles_desc": "以下游戏有可用的更新:"
+    "outdated_titles_desc": "以下游戏有可用的更新:",
+    "missing_dlc": "缺失的DLC(s)",
+    "update_available": "版本更新可用",
+    "details": "详情"
   },
   "utils": {
     "fw_warning": "由于固件的体积，不支持在 Applet 模式下下载固件。请以完全 RAM 访问权限运行此程序。",

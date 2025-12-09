@@ -59,9 +59,9 @@ CheatSettingsPage::CheatSettingsPage() : AppletFrame(true, true)
     rememberStateItem->setValue(getCurrentSetting("dmnt_always_save_cheat_toggles") ? "menus/common/enabled"_i18n : "menus/common/disabled"_i18n);
     list->addView(rememberStateItem);
     
-    // Add single non-interactive spacing to push restart and info to bottom
+    // Add small spacing
     brls::Label* spacer = new brls::Label(brls::LabelStyle::DESCRIPTION, "", true);
-    spacer->setHeight(25);
+    spacer->setHeight(10);
     list->addView(spacer);
     
     // Add restart to payload button (moved to bottom)

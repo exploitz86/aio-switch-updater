@@ -162,7 +162,10 @@
     "language": "Cambia la lingua dell'app",
     "outdated_titles": "Aggiornamenti mancanti",
     "latest_version_not_found": "Impossibile reperire informazioni sugli aggiornamenti",
-    "outdated_titles_desc": "I seguenti titoli hanno degli aggiornamenti disponibili:"
+    "outdated_titles_desc": "I seguenti titoli hanno degli aggiornamenti disponibili:",
+    "missing_dlc": "DLC(i) mancante(i)",
+    "update_available": "Aggiornamento versione disponibile",
+    "details": "Dettagli"
   },
   "utils": {
     "fw_warning": "A causa della dimensione dei file del FW, il download dei firmware in Modalità Applet non è supportato. Avvia l'applicazione con pieno accesso alla RAM.",

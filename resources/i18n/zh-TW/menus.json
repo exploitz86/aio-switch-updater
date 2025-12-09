@@ -165,11 +165,14 @@
     "browser": "網路瀏覽器",
     "batch_copy": "批次複製檔案",
     "batch_copy_not_found": "列出的檔案已不在原先的位置，因此無法複製:\n",
-    "batch_copy_config_not_found": "此功能可將檔案複製到其他儲存位置，部分檔案路徑需要你的bootloader/trinket。請前往'https://git.io/aiosu_copyfiles' 下載copy_files.txt 並複製到config資料夾內。更新後也將執行此操作。",
+    "batch_copy_config_not_found": "此功能可將檔案複製到其他儲存位置，部分檔案路徑需要你的bootloader/trinket。請前往'https://git.io/aiosu_copyfiles' 下載copy_files.txt 並複製config資料夾內。更新後也將執行此操作。",
     "language": "變更介面語系",
     "outdated_titles": "尚未更新",
     "latest_version_not_found": "沒有更新內容的相關資訊",
-    "outdated_titles_desc": "以下列出的項目有可用的更新:"
+    "outdated_titles_desc": "以下列出的項目有可用的更新:",
+    "missing_dlc": "缺失的DLC(s)",
+    "update_available": "版本更新可用",
+    "details": "詳情"
   },
   "utils": {
     "fw_warning": "由於FW壓縮檔太大，在applet模式下無法下載韌體。請在能存取完整記憶體的一般模式下執行下載程序",

@@ -185,7 +185,10 @@
     "language": "Cambiar idioma de la app",
     "outdated_titles": "Actualizaciones pendientes",
     "latest_version_not_found": "No se pudo conseguir información sobre actualizaciones",
-    "outdated_titles_desc": "Los siguientes títulos tienen actualizaciones:"
+    "outdated_titles_desc": "Los siguientes títulos tienen actualizaciones:",
+    "missing_dlc": "DLC(s) faltante(s)",
+    "update_available": "Actualización de versión disponible",
+    "details": "Detalles"
   },
   "utils": {
     "fw_warning": "Debido al tamaño de los FW, descargar firmwares en modo applet no está soportado. Por favor, ejecuta la aplicación con acceso a toda la RAM.",
